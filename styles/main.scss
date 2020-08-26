@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oxygen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import 'home';
+@import 'nav';
+@import 'content';
+@import 'pgtransitions';
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Oxygen;
+}

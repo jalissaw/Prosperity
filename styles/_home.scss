@@ -1,0 +1,62 @@
+
+header {
+    height: 100vh;
+    width: 100%;
+    
+    span {
+        padding: 10px;
+        font-size: 1.2em;
+        color: midnightblue;
+    }
+
+    .hero {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 90vh;
+        width: 100%;
+        background: url('/imgs/header.PNG');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        background-position-y: 75px;
+        filter: grayscale(0);
+
+        .intro {
+            transform: translate(20%, -80%);
+
+            .title {
+                text-transform: uppercase;
+                font-size: 4em;
+                letter-spacing: 2px;
+                color: midnightblue;
+                font-family: Anton;
+            }
+
+            .motto {
+                padding-bottom: 12px;
+                font-size: 1.7em;
+                font-style: oblique;
+            }
+
+            .btn {
+                border: none;
+                outline: none;
+                width: 115px;
+                background: midnightblue;
+                padding: 15px;
+                color: white;
+                font-size: 1em;
+                transition: ease-in 0.25s;
+
+                &:hover {
+                    cursor: pointer;
+                    background: white;
+                    border: midnightblue 2px solid;
+                   color: midnightblue;
+                }
+            }
+        }
+        
+    }
+}

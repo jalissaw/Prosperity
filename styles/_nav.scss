@@ -1,0 +1,36 @@
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    padding: 0px 50px;
+    // background: rgb(32, 32, 150);
+    border-bottom: black solid 2px;;
+    color: white;
+
+    .links {
+        display: flex;
+        list-style-type: none;
+
+        .link {
+           margin: 0px 25px;
+           padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.2em;
+            padding: 10px;
+            transition: ease-in 0.3s;
+            color: darkblue;
+
+            &:hover {
+                padding: 10px;
+                background: darkblue;
+                letter-spacing: 2px;
+                color: white;
+            }
+        }
+    }
+}
