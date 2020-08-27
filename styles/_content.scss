@@ -1,34 +1,113 @@
+//content info
+//section with the icons and text
 .about {
     display: flex;
     width: 100%;
+    height: 50vh;
+    color: white;
+
+    .images {
+        background: url('/imgs/freights.PNG');
+    }
 
     .containservices {
         display: flex;
         // flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        flex: 1 1 35%;
-    }
+        flex: 1 1 30%;
+        background: rgb(35, 151, 236);
 
-    .service {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 10px 15px;
-        // background: rgb(46, 122, 223);
+            .service {
+                display: flex;
+                flex-direction: column;
+                // flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 10px 15px;
+                // background: rgb(46, 122, 223);
+                
+                .fas {
+                    font-size: 1.5em;
+                    background: black;
+                    padding: 10px;
+                    border-radius: 8px;
+                }
+
+                .servicetitle {
+                    color: black;
+                    padding: 8px 0px;
+                    font-size: 1.4em;
+                    border-bottom: 1.5px solid black;
+                }
+
+                .serviceinfo {
+                    padding-top: 10px;
+                    width: 70%;
+                    line-height: 25px;
+                }
+            }
+
+        }
+
+    }
+    //section with picture and info 
+
+    .promo {
+        display: flex; 
+        width: 100%;
+        height: 50vh;
         
+        .imgfreight {
+            background-repeat: no-repeat;
+            background-size: contain;
+            height: 100%;
+            width: 70%;
+
+
+            .img1 {
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 100%;
+                width: 100%;
+                filter: grayscale(1);
+                transition: ease-in 0.25s;
+        
+
+                &:hover {
+                    filter: grayscale(0);
+                }
+            }
+        }
+
+        .contactinfo {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+
+            .contacttitle {
+                font-size: 1.6em;
+                border-bottom: solid 2px rgb(35, 151, 236);
+                padding: 8px 0px;
+            }
+
+            .required {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 1.4em;
+                list-style-type: none;
+                margin: 8px 0px;
+                font-weight: 100;
+            }
+        }
+
     }
 
-    .servicetitle {
-        color: rgb(46, 122, 223);
-        font-size: 1.2em;
-    }
+    // form section 
 
-    .serviceinfo {
-        width: 70%;
-    }
-
-}
+    

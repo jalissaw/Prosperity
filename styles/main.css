@@ -28,18 +28,16 @@ header .hero {
   background-size: contain;
   background-position: right;
   background-position-y: 75px;
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
 }
 
 header .hero .intro {
-  -webkit-transform: translate(20%, -80%);
-          transform: translate(20%, -80%);
+  -webkit-transform: translate(20%, -60%);
+          transform: translate(20%, -60%);
 }
 
 header .hero .intro .title {
   text-transform: uppercase;
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 2px;
   color: midnightblue;
   font-family: Anton;
@@ -55,7 +53,7 @@ header .hero .intro .btn {
   border: none;
   outline: none;
   width: 115px;
-  background: midnightblue;
+  background: #2397ec;
   padding: 15px;
   color: white;
   font-size: 1em;
@@ -119,6 +117,12 @@ header .hero .intro .btn:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  height: 50vh;
+  color: white;
+}
+
+.about .images {
+  background: url("/imgs/freights.PNG");
 }
 
 .about .containservices {
@@ -132,11 +136,12 @@ header .hero .intro .btn:hover {
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 35%;
-          flex: 1 1 35%;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  background: #2397ec;
 }
 
-.about .service {
+.about .containservices .service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -144,8 +149,6 @@ header .hero .intro .btn:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -156,13 +159,96 @@ header .hero .intro .btn:hover {
   padding: 10px 15px;
 }
 
-.about .servicetitle {
-  color: #2e7adf;
-  font-size: 1.2em;
+.about .containservices .service .fas {
+  font-size: 1.5em;
+  background: black;
+  padding: 10px;
+  border-radius: 8px;
 }
 
-.about .serviceinfo {
+.about .containservices .service .servicetitle {
+  color: black;
+  padding: 8px 0px;
+  font-size: 1.4em;
+  border-bottom: 1.5px solid black;
+}
+
+.about .containservices .service .serviceinfo {
+  padding-top: 10px;
   width: 70%;
+  line-height: 25px;
+}
+
+.promo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 50vh;
+}
+
+.promo .imgfreight {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 70%;
+}
+
+.promo .imgfreight .img1 {
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: ease-in 0.25s;
+  transition: ease-in 0.25s;
+}
+
+.promo .imgfreight .img1:hover {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.promo .contactinfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+.promo .contactinfo .contacttitle {
+  font-size: 1.6em;
+  border-bottom: solid 2px #2397ec;
+  padding: 8px 0px;
+}
+
+.promo .contactinfo .required {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 1.4em;
+  list-style-type: none;
+  margin: 8px 0px;
+  font-weight: 100;
 }
 
 .homepagetransition {
