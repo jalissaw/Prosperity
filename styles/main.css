@@ -5,12 +5,6 @@ header {
   width: 100%;
 }
 
-header span {
-  padding: 10px;
-  font-size: 1.2em;
-  color: midnightblue;
-}
-
 header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,8 +74,14 @@ header .hero .intro .btn:hover {
           align-items: center;
   height: 10vh;
   padding: 0px 50px;
-  border-bottom: black solid 2px;
   color: white;
+}
+
+.nav span {
+  padding: 10px;
+  font-size: 1.2em;
+  color: midnightblue;
+  margin-left: 100px;
 }
 
 .nav .links {
@@ -118,7 +118,6 @@ header .hero .intro .btn:hover {
   display: flex;
   width: 100%;
   height: 50vh;
-  color: white;
 }
 
 .about .images {
@@ -138,7 +137,6 @@ header .hero .intro .btn:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 30%;
           flex: 1 1 30%;
-  background: #2397ec;
 }
 
 .about .containservices .service {
@@ -160,9 +158,9 @@ header .hero .intro .btn:hover {
 }
 
 .about .containservices .service .fas {
-  font-size: 1.5em;
-  background: black;
-  padding: 10px;
+  font-size: 1.7em;
+  color: #2397ec;
+  padding: 12px;
   border-radius: 8px;
 }
 
@@ -170,7 +168,7 @@ header .hero .intro .btn:hover {
   color: black;
   padding: 8px 0px;
   font-size: 1.4em;
-  border-bottom: 1.5px solid black;
+  border-bottom: 1.5px solid lightgrey;
 }
 
 .about .containservices .service .serviceinfo {
@@ -185,24 +183,24 @@ header .hero .intro .btn:hover {
   display: flex;
   width: 100%;
   height: 50vh;
+  position: relative;
 }
 
 .promo .imgfreight {
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
-  width: 70%;
 }
 
 .promo .imgfreight .img1 {
+  position: absolute;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
   width: 100%;
-  -webkit-filter: grayscale(1);
-          filter: grayscale(1);
   -webkit-transition: ease-in 0.25s;
   transition: ease-in 0.25s;
+  opacity: 0.2;
 }
 
 .promo .imgfreight .img1:hover {
@@ -249,6 +247,81 @@ header .hero .intro .btn:hover {
   list-style-type: none;
   margin: 8px 0px;
   font-weight: 100;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px 0px;
+}
+
+footer .logotitle {
+  color: midnightblue;
+  font-size: 1.5em;
+}
+
+footer .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+}
+
+footer .form .textfields {
+  width: 80%;
+  height: 35px;
+  outline: none;
+  border: none;
+  padding-left: 8px;
+  background: rgba(201, 202, 206, 0.2);
+}
+
+footer .form ::-webkit-input-placeholder {
+  color: midnightblue;
+}
+
+footer .form :-ms-input-placeholder {
+  color: midnightblue;
+}
+
+footer .form ::-ms-input-placeholder {
+  color: midnightblue;
+}
+
+footer .form ::placeholder {
+  color: midnightblue;
+}
+
+footer .form input[type="email"] {
+  margin: 8px 0px;
+}
+
+footer .form .message {
+  width: 80%;
+  height: 200px;
+  resize: vertical;
+  border: none;
+  outline: none;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  padding-top: 8px;
+  background: rgba(201, 202, 206, 0.2);
+}
+
+footer .form .footbtn {
+  width: 100px;
+  border: none;
+  outline: none;
+  height: 40px;
+  background: midnightblue;
+  color: white;
 }
 
 .homepagetransition {
