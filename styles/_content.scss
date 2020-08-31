@@ -61,21 +61,32 @@
         position: relative;
         
         .imgfreight {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             background-repeat: no-repeat;
             background-size: contain;
             height: 100%;
+            
+            &:before {
+                content: '';
+                position: absolute;
+                border: solid 2px rgb(35, 151, 236);
+                height: 200px;
+                width: 125px;
+               
+            }
 
 
             .img1 {
-                position: absolute;
-                background-repeat: no-repeat;
-                background-size: contain;
-                height: 100%;
-                width: 100%;
+                // position: absolute;
+                // background-repeat: no-repeat;
+                // background-size: contain;
+                height: 250px;
+                width: 300px;
                 transition: ease-in 0.25s;
                 opacity: 0.2;
-        
-
+    
                 &:hover {
                     filter: grayscale(0);
                 }
@@ -100,7 +111,6 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                font-size: 1.4em;
                 list-style-type: none;
                 margin: 8px 0px;
                 font-weight: 100;

@@ -3,6 +3,7 @@
 header {
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 header .hero {
@@ -15,13 +16,23 @@ header .hero {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   height: 90vh;
   width: 100%;
-  background: url("/imgs/header.PNG");
+}
+
+header .hero .heropic {
+  position: absolute;
+  right: 0;
+  width: 75%;
+  height: 85%;
+  opacity: 0.45;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-position: right;
-  background-position-y: 75px;
 }
 
 header .hero .intro {
@@ -187,17 +198,31 @@ header .hero .intro .btn:hover {
 }
 
 .promo .imgfreight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-repeat: no-repeat;
   background-size: contain;
   height: 100%;
 }
 
-.promo .imgfreight .img1 {
+.promo .imgfreight:before {
+  content: '';
   position: absolute;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-  width: 100%;
+  border: solid 2px #2397ec;
+  height: 200px;
+  width: 125px;
+}
+
+.promo .imgfreight .img1 {
+  height: 250px;
+  width: 300px;
   -webkit-transition: ease-in 0.25s;
   transition: ease-in 0.25s;
   opacity: 0.2;
@@ -243,7 +268,6 @@ header .hero .intro .btn:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  font-size: 1.4em;
   list-style-type: none;
   margin: 8px 0px;
   font-weight: 100;
