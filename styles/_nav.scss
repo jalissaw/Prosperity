@@ -1,3 +1,5 @@
+@import 'variables';
+
 
 .nav {
     display: flex;
@@ -5,9 +7,10 @@
     align-items: center;
     height: 10vh;
     padding: 0px 50px;
-    // background: rgb(32, 32, 150);
-    // border-bottom: black solid 2px;
     color: white;
+    @media #{$navgone} {
+        display: none;
+    }
 
      span {
         padding: 10px;

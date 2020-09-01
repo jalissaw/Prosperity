@@ -2,6 +2,13 @@ footer {
     display: flex;
     justify-content: space-around;
     padding: 30px 0px;
+
+    @media #{$allphones} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
    
 
     .logotitle {
@@ -13,6 +20,13 @@ footer {
         display: flex;
         flex-direction: column;
         width: 35%;
+
+        @media #{$allphones} {
+            align-items: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+       
 
         .textfields {
             width: 80%;

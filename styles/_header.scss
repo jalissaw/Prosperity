@@ -1,8 +1,11 @@
+@import 'variables';
+
 
 header {
     height: 100vh;
     width: 100%;
     position: relative;
+    overflow: hidden;
 
     .hero {
         display: flex;
@@ -12,15 +15,25 @@ header {
         height: 90vh;
         width: 100%;
 
+        @media #{$allphones} {
+            width: 80%;
+         }
+
         .heropic {
             position: absolute;
             right: 0;
+            bottom: 0;
             width: 75%;
             height: 85%;
             opacity: 0.45;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: right;
+
+            @media #{$allphones} {
+                height: 50%;
+                width: 100%;
+            }
         }
 
         .intro {
@@ -31,13 +44,20 @@ header {
                 font-size: 3em;
                 letter-spacing: 2px;
                 color: midnightblue;
-                font-family: Anton;
+
+                @media #{$allphones} {
+                    font-size: 1.3em;
+                }
             }
 
             .motto {
                 padding-bottom: 12px;
                 font-size: 1.7em;
                 font-style: oblique;
+
+                @media #{$allphones} {
+                    display: none;
+                 }
             }
 
             .btn {
@@ -49,6 +69,10 @@ header {
                 color: white;
                 font-size: 1em;
                 transition: ease-in 0.25s;
+
+                @media #{$allphones} {
+                   display: none;
+                }
 
                 &:hover {
                     cursor: pointer;

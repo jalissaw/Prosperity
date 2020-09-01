@@ -4,6 +4,7 @@ header {
   height: 100vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 header .hero {
@@ -24,15 +25,29 @@ header .hero {
   width: 100%;
 }
 
+@media (min-width: 300px) and (max-width: 415px) {
+  header .hero {
+    width: 80%;
+  }
+}
+
 header .hero .heropic {
   position: absolute;
   right: 0;
+  bottom: 0;
   width: 75%;
   height: 85%;
   opacity: 0.45;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
+}
+
+@media (min-width: 300px) and (max-width: 415px) {
+  header .hero .heropic {
+    height: 50%;
+    width: 100%;
+  }
 }
 
 header .hero .intro {
@@ -45,13 +60,24 @@ header .hero .intro .title {
   font-size: 3em;
   letter-spacing: 2px;
   color: midnightblue;
-  font-family: Anton;
+}
+
+@media (min-width: 300px) and (max-width: 415px) {
+  header .hero .intro .title {
+    font-size: 1.3em;
+  }
 }
 
 header .hero .intro .motto {
   padding-bottom: 12px;
   font-size: 1.7em;
   font-style: oblique;
+}
+
+@media (min-width: 300px) and (max-width: 415px) {
+  header .hero .intro .motto {
+    display: none;
+  }
 }
 
 header .hero .intro .btn {
@@ -64,6 +90,12 @@ header .hero .intro .btn {
   font-size: 1em;
   -webkit-transition: ease-in 0.25s;
   transition: ease-in 0.25s;
+}
+
+@media (min-width: 300px) and (max-width: 415px) {
+  header .hero .intro .btn {
+    display: none;
+  }
 }
 
 header .hero .intro .btn:hover {
@@ -86,6 +118,12 @@ header .hero .intro .btn:hover {
   height: 10vh;
   padding: 0px 50px;
   color: white;
+}
+
+@media (max-width: 1000px) {
+  .nav {
+    display: none;
+  }
 }
 
 .nav span {
@@ -128,26 +166,20 @@ header .hero .intro .btn:hover {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
-  height: 50vh;
-}
-
-.about .images {
-  background: url("/imgs/freights.PNG");
 }
 
 .about .containservices {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 30%;
-          flex: 1 1 30%;
 }
 
 .about .containservices .service {
@@ -158,6 +190,8 @@ header .hero .intro .btn:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -166,6 +200,9 @@ header .hero .intro .btn:hover {
           align-items: center;
   text-align: center;
   padding: 10px 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 325px;
+          flex: 1 1 325px;
 }
 
 .about .containservices .service .fas {
@@ -184,7 +221,7 @@ header .hero .intro .btn:hover {
 
 .about .containservices .service .serviceinfo {
   padding-top: 10px;
-  width: 70%;
+  width: 80%;
   line-height: 25px;
 }
 
@@ -195,42 +232,7 @@ header .hero .intro .btn:hover {
   width: 100%;
   height: 50vh;
   position: relative;
-}
-
-.promo .imgfreight {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-  height: 100%;
-}
-
-.promo .imgfreight:before {
-  content: '';
-  position: absolute;
-  border: solid 2px #2397ec;
-  height: 200px;
-  width: 125px;
-}
-
-.promo .imgfreight .img1 {
-  height: 250px;
-  width: 300px;
-  -webkit-transition: ease-in 0.25s;
-  transition: ease-in 0.25s;
-  opacity: 0.2;
-}
-
-.promo .imgfreight .img1:hover {
-  -webkit-filter: grayscale(0);
-          filter: grayscale(0);
+  background: rgba(201, 202, 206, 0.2);
 }
 
 .promo .contactinfo {
@@ -251,10 +253,28 @@ header .hero .intro .btn:hover {
   width: 100%;
 }
 
+@media (min-width: 300px) and (max-width: 415px) {
+  .promo .contactinfo {
+    padding: 0px 25px;
+  }
+}
+
 .promo .contactinfo .contacttitle {
   font-size: 1.6em;
   border-bottom: solid 2px #2397ec;
   padding: 8px 0px;
+}
+
+@media (min-width: 300px) and (max-width: 415px) {
+  .promo .contactinfo .contacttitle {
+    font-size: 1.4em;
+  }
+}
+
+@media (max-width: 320px) {
+  .promo .contactinfo .contacttitle {
+    font-size: 1.2em;
+  }
 }
 
 .promo .contactinfo .required {
@@ -273,6 +293,12 @@ header .hero .intro .btn:hover {
   font-weight: 100;
 }
 
+@media (min-width: 300px) and (max-width: 415px) {
+  .promo .contactinfo .required {
+    font-size: 1em;
+  }
+}
+
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -280,6 +306,24 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   padding: 30px 0px;
+}
+
+@media (min-width: 300px) and (max-width: 415px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 footer .logotitle {
@@ -296,6 +340,16 @@ footer .form {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 35%;
+}
+
+@media (min-width: 300px) and (max-width: 415px) {
+  footer .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    width: 100%;
+  }
 }
 
 footer .form .textfields {
