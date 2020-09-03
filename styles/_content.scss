@@ -73,9 +73,15 @@
                 border-bottom: solid 2px rgb(35, 151, 236);
                 padding: 8px 0px;
 
+                @media #{$stablets} {
+                    font-size: 1.6em;
+                }
+                
+                
                 @media #{$allphones} {
                     font-size: 1.4em;
                 }
+
 
                 @media #{$xsphones} {
                     font-size: 1.2em;

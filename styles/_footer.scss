@@ -9,6 +9,12 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    @media #{$stablets} {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
    
 
     .logotitle {
@@ -25,6 +31,12 @@ footer {
             align-items: center;
             margin-top: 20px;
             width: 100%;
+        }
+
+        @media #{$stablets} {
+            align-items: center;
+            margin-top: 20px;
+            width: 70%;
         }
        
 

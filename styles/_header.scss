@@ -13,11 +13,15 @@ header {
         align-items: center;
         flex-direction: row;
         height: 90vh;
-        width: 100%;
+        width: 70%;
 
         @media #{$allphones} {
             width: 80%;
          }
+
+         @media #{$stablets} {
+            width: 80%;
+        }
 
         .heropic {
             position: absolute;
@@ -34,6 +38,11 @@ header {
                 height: 50%;
                 width: 100%;
             }
+
+            @media #{$stablets} {
+                height: 60%;
+                width: 100%;
+            }
         }
 
         .intro {
@@ -48,6 +57,9 @@ header {
                 @media #{$allphones} {
                     font-size: 1.3em;
                 }
+                @media #{$stablets} {
+                    font-size: 2.5em;
+                }
             }
 
             .motto {
@@ -56,6 +68,10 @@ header {
                 font-style: oblique;
 
                 @media #{$allphones} {
+                    display: none;
+                 }
+
+                 @media #{$introgone} {
                     display: none;
                  }
             }
@@ -73,6 +89,10 @@ header {
                 @media #{$allphones} {
                    display: none;
                 }
+
+                @media #{$introgone} {
+                    display: none;
+                 }
 
                 &:hover {
                     cursor: pointer;

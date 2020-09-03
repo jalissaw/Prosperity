@@ -22,10 +22,16 @@ header .hero {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 90vh;
-  width: 100%;
+  width: 70%;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
+  header .hero {
+    width: 80%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
   header .hero {
     width: 80%;
   }
@@ -43,9 +49,16 @@ header .hero .heropic {
   background-position: right;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
   header .hero .heropic {
     height: 50%;
+    width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  header .hero .heropic {
+    height: 60%;
     width: 100%;
   }
 }
@@ -62,9 +75,15 @@ header .hero .intro .title {
   color: midnightblue;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
   header .hero .intro .title {
     font-size: 1.3em;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  header .hero .intro .title {
+    font-size: 2.5em;
   }
 }
 
@@ -74,7 +93,13 @@ header .hero .intro .motto {
   font-style: oblique;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
+  header .hero .intro .motto {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
   header .hero .intro .motto {
     display: none;
   }
@@ -92,7 +117,13 @@ header .hero .intro .btn {
   transition: ease-in 0.25s;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
+  header .hero .intro .btn {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
   header .hero .intro .btn {
     display: none;
   }
@@ -253,7 +284,7 @@ header .hero .intro .btn:hover {
   width: 100%;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
   .promo .contactinfo {
     padding: 0px 25px;
   }
@@ -265,7 +296,13 @@ header .hero .intro .btn:hover {
   padding: 8px 0px;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 481px) and (max-width: 800px) {
+  .promo .contactinfo .contacttitle {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 480px) {
   .promo .contactinfo .contacttitle {
     font-size: 1.4em;
   }
@@ -293,7 +330,7 @@ header .hero .intro .btn:hover {
   font-weight: 100;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
   .promo .contactinfo .required {
     font-size: 1em;
   }
@@ -308,7 +345,25 @@ footer {
   padding: 30px 0px;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -342,13 +397,23 @@ footer .form {
   width: 35%;
 }
 
-@media (min-width: 300px) and (max-width: 415px) {
+@media (min-width: 300px) and (max-width: 480px) {
   footer .form {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     margin-top: 20px;
     width: 100%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  footer .form {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 20px;
+    width: 70%;
   }
 }
 
