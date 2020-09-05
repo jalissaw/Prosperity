@@ -210,6 +210,12 @@ header .hero .intro .btn:hover {
   transition: ease-in-out 0.2s 0.25s;
 }
 
+@media (min-width: 1000px) {
+  .showmenu {
+    display: none;
+  }
+}
+
 .showmenu.appear {
   background: #2397ec;
 }
