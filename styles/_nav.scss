@@ -55,6 +55,32 @@
     height: 100vh;
     width: 100%;
     z-index: 2;
+    transition: ease-in-out 0.2s 0.3s;
+
+    &.appear {
+        background: rgb(35, 151, 236);
+    }
+
+    .links {
+        list-style-type: none;
+    }
+
+    .showlink {
+        margin: 8px 0px;
+        transform: translateX(-20px);
+        opacity: 0;
+        transition: ease-in-out 0.2s;
+
+        &.appear {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.3em;
+    }
 }
 
 .menu {
@@ -67,6 +93,10 @@
     top: 25px;
     right: 25px;
     z-index: 3;
+
+    @media #{$menu} {
+        display: none;
+    }
 
     .toggle {
         position: relative;
