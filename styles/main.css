@@ -619,4 +619,8 @@ footer .form .footbtn {
           box-sizing: border-box;
   font-family: Oxygen;
 }
+
+html {
+  scroll-behavior: smooth;
+}
 /*# sourceMappingURL=main.css.map */
