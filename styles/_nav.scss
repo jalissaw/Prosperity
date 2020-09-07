@@ -56,13 +56,15 @@
     width: 100%;
     z-index: 2;
     transition: ease-in-out 0.2s 0.25s;
+    background: rgb(35, 151, 236);
+    opacity: 0;
 
     @media #{$menu} {
         display: none;
     }
 
     &.appear {
-        background: rgb(35, 151, 236);
+        opacity: 1;
     }
 
     .links {
