@@ -1,0 +1,40 @@
+main {
+    width: 100%;
+
+    .heroabout {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 50vh;
+        width: 100%;
+
+        .abouttitle {
+            text-transform: uppercase;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .freight {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.3;
+        }
+    }
+
+    .aboutinfo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 35px;
+        line-height: 25px;
+
+        .info {
+            font-size: 1.02em;
+            width: 75%;
+            padding: 20px;
+        }
+    }
+}
