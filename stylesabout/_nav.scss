@@ -54,7 +54,7 @@
     align-items: center;
     height: 100vh;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     transition: ease-in-out 0.2s 0.25s;
     background: rgb(35, 151, 236);
     opacity: 0;
@@ -106,7 +106,7 @@
     height: 50px;
     top: 25px;
     right: 25px;
-    z-index: 3;
+    z-index: 4;
 
     @media #{$menu} {
         display: none;
