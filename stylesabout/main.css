@@ -187,9 +187,13 @@ main .heroabout {
   position: relative;
   height: 50vh;
   width: 100%;
+  color: midnightblue;
+  border-bottom: solid 2px rgba(201, 202, 206, 0.2);
+  border-top: solid 2px rgba(201, 202, 206, 0.2);
 }
 
 main .heroabout .abouttitle {
+  font-size: 2.3em;
   text-transform: uppercase;
   text-align: center;
   z-index: 1;
@@ -206,6 +210,10 @@ main .aboutinfo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -217,10 +225,46 @@ main .aboutinfo {
   line-height: 25px;
 }
 
+main .aboutinfo .infotitle {
+  padding-bottom: 8px;
+  border-bottom: 1.5px solid #2397ec;
+}
+
 main .aboutinfo .info {
   font-size: 1.02em;
   width: 75%;
   padding: 20px;
+}
+
+.homepagetransition {
+  -webkit-animation: homepg 0.75s;
+          animation: homepg 0.75s;
+}
+
+@-webkit-keyframes homepg {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes homepg {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(-10px);
+            transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 * {

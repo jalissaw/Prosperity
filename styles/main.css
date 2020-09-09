@@ -589,35 +589,33 @@ footer .form .footbtn:hover {
 }
 
 .homepagetransition {
-  -webkit-animation-name: homepg;
-          animation-name: homepg;
-  -webkit-animation: 5s ease-in forwards;
-          animation: 5s ease-in forwards;
+  -webkit-animation: homepg 0.75s;
+          animation: homepg 0.75s;
 }
 
 @-webkit-keyframes homepg {
   from {
     opacity: 0;
-    -webkit-transform: translate(-10px);
-            transform: translate(-10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
 @keyframes homepg {
   from {
     opacity: 0;
-    -webkit-transform: translate(-10px);
-            transform: translate(-10px);
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translate(0px);
-            transform: translate(0px);
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
   }
 }
 
