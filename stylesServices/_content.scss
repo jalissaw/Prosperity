@@ -25,6 +25,7 @@ main {
             font-weight: 600;
             font-style: italic;
             color: black;
+            padding-top: 8px;
         }
 
         .carhauler {
@@ -57,6 +58,12 @@ main {
             line-height: 25px;
             text-align: center;
             padding-top: 8px;
+            font-size: 1.1em;
+
+            @media #{$allphones} {
+                font-size: 0.9em;
+                line-height: 20px;
+            }
         }
     }
 
@@ -72,6 +79,17 @@ main {
             align-items: center;
             padding: 50px;
             width: 100%;
+
+            @media #{$stablets} {
+                padding: 10px 50px;
+            }
+            @media #{$allphones} {
+                padding: 10px 50px;
+            }
+        }
+
+        .content {
+            padding: 20px;
         }
 
         .largetitle {
@@ -83,8 +101,18 @@ main {
         }
 
         .img {
+            width: 95%;
             opacity: 0.45;
             box-shadow: 1.5px 1.5px 3px $darkblue;
+        }
+
+        .image {
+            @media #{$stablets} {
+                display: none;
+            }
+            @media #{$allphones} {
+                display: none;
+            }
         }
 
         .freighttitle {
@@ -92,6 +120,10 @@ main {
             text-transform: uppercase;
             font-size: 1.6em;
             border-bottom: 2px solid lightgrey;
+
+            @media #{$allphones} {
+                font-size: 1.3em;
+            }
         }
 
         .list {
@@ -101,6 +133,39 @@ main {
             .items {
                 margin: 10px 0px;
                 font-size: 1.1em;
+                @media #{$allphones} {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        background: $lightgrey;
+        height: 30vh;
+
+        .contactinfo {
+            text-align: center;
+            padding: 15px;
+            font-size: 1.4em;
+        }
+
+        .btn {
+            width: 100px;
+            height: 40px;
+            border: none;
+            outline: none;
+            border-radius: 4px;
+            box-shadow: 2px 2px 2px black;
+            color: whitesmoke;
+            background: $darkblue;
+
+            &:hover {
+                cursor: pointer;
             }
         }
     }

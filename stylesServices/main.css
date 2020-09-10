@@ -208,6 +208,7 @@ main .heroservices .subheading {
   font-weight: 600;
   font-style: italic;
   color: black;
+  padding-top: 8px;
 }
 
 main .heroservices .carhauler {
@@ -250,6 +251,14 @@ main .intro .introsaying {
   line-height: 25px;
   text-align: center;
   padding-top: 8px;
+  font-size: 1.1em;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  main .intro .introsaying {
+    font-size: 0.9em;
+    line-height: 20px;
+  }
 }
 
 main .services {
@@ -280,6 +289,22 @@ main .services .haul {
   width: 100%;
 }
 
+@media (min-width: 481px) and (max-width: 800px) {
+  main .services .haul {
+    padding: 10px 50px;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  main .services .haul {
+    padding: 10px 50px;
+  }
+}
+
+main .services .content {
+  padding: 20px;
+}
+
 main .services .largetitle {
   color: midnightblue;
 }
@@ -289,9 +314,22 @@ main .services .smalltitle {
 }
 
 main .services .img {
+  width: 95%;
   opacity: 0.45;
   -webkit-box-shadow: 1.5px 1.5px 3px midnightblue;
           box-shadow: 1.5px 1.5px 3px midnightblue;
+}
+
+@media (min-width: 481px) and (max-width: 800px) {
+  main .services .image {
+    display: none;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  main .services .image {
+    display: none;
+  }
 }
 
 main .services .freighttitle {
@@ -301,6 +339,12 @@ main .services .freighttitle {
   border-bottom: 2px solid lightgrey;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  main .services .freighttitle {
+    font-size: 1.3em;
+  }
+}
+
 main .services .list {
   list-style-type: none;
 }
@@ -308,6 +352,83 @@ main .services .list {
 main .services .list .items {
   margin: 10px 0px;
   font-size: 1.1em;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  main .services .list .items {
+    font-size: 1em;
+  }
+}
+
+main .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rgba(201, 202, 206, 0.2);
+  height: 30vh;
+}
+
+main .contact .contactinfo {
+  text-align: center;
+  padding: 15px;
+  font-size: 1.4em;
+}
+
+main .contact .btn {
+  width: 100px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  -webkit-box-shadow: 2px 2px 2px black;
+          box-shadow: 2px 2px 2px black;
+  color: whitesmoke;
+  background: midnightblue;
+}
+
+main .contact .btn:hover {
+  cursor: pointer;
+}
+
+.homepagetransition {
+  -webkit-animation: homepg 0.75s;
+          animation: homepg 0.75s;
+}
+
+@-webkit-keyframes homepg {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes homepg {
+  from {
+    opacity: 0;
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 * {
