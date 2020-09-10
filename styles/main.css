@@ -25,15 +25,15 @@ header .hero {
   width: 70%;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header .hero {
     width: 80%;
   }
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 849px) {
   header .hero {
-    width: 80%;
+    width: 85%;
   }
 }
 
@@ -49,14 +49,14 @@ header .hero .heropic {
   background-position: right;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header .hero .heropic {
     height: 50%;
     width: 100%;
   }
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 849px) {
   header .hero .heropic {
     height: 60%;
     width: 100%;
@@ -75,13 +75,13 @@ header .hero .intro .title {
   color: midnightblue;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header .hero .intro .title {
     font-size: 1.3em;
   }
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 849px) {
   header .hero .intro .title {
     font-size: 2.5em;
   }
@@ -93,7 +93,7 @@ header .hero .intro .motto {
   font-style: oblique;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header .hero .intro .motto {
     display: none;
   }
@@ -117,7 +117,7 @@ header .hero .intro .btn {
   transition: ease-in 0.25s;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header .hero .intro .btn {
     display: none;
   }
@@ -182,12 +182,12 @@ header .hero .intro .btn:hover {
   padding: 10px;
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
-  color: darkblue;
+  color: midnightblue;
 }
 
 .nav .links a:hover {
   padding: 10px;
-  background: darkblue;
+  background: midnightblue;
   letter-spacing: 2px;
   color: white;
 }
@@ -204,10 +204,10 @@ header .hero .intro .btn:hover {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
-  width: 100%;
+  width: 0%;
   z-index: 2;
-  -webkit-transition: ease-in-out 0.2s 0.25s;
-  transition: ease-in-out 0.2s 0.25s;
+  -webkit-transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.3s;
   background: #2397ec;
   opacity: 0;
 }
@@ -220,6 +220,7 @@ header .hero .intro .btn:hover {
 
 .showmenu.appear {
   opacity: 1;
+  width: 100%;
 }
 
 .showmenu .links {
@@ -232,8 +233,8 @@ header .hero .intro .btn:hover {
           transform: translateX(-20px);
   padding: 10px;
   opacity: 0;
-  -webkit-transition: ease-in-out 0.2s;
-  transition: ease-in-out 0.2s;
+  -webkit-transition: ease-in-out 0.3s 0.2s;
+  transition: ease-in-out 0.3s 0.2s;
 }
 
 .showmenu .showlink.appear {
@@ -396,9 +397,10 @@ header .hero .intro .btn:hover {
           align-items: center;
   text-align: center;
   width: 100%;
+  padding: 15px;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .promo .contactinfo {
     padding: 0px 25px;
   }
@@ -410,13 +412,13 @@ header .hero .intro .btn:hover {
   padding: 8px 0px;
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 849px) {
   .promo .contactinfo .contacttitle {
     font-size: 1.6em;
   }
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .promo .contactinfo .contacttitle {
     font-size: 1.4em;
   }
@@ -444,7 +446,7 @@ header .hero .intro .btn:hover {
   font-weight: 100;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .promo .contactinfo .required {
     font-size: 1em;
   }
@@ -459,7 +461,7 @@ footer {
   padding: 30px 0px;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -477,7 +479,7 @@ footer {
   }
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 849px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -492,6 +494,20 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  footer .footerlogo {
+    font-size: 1.1em;
+    width: 80%;
+  }
+}
+
+@media (max-width: 320px) {
+  footer .footerlogo {
+    font-size: 0.9em;
+    width: 80%;
   }
 }
 
@@ -511,7 +527,7 @@ footer .form {
   width: 35%;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer .form {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -521,7 +537,7 @@ footer .form {
   }
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
+@media (min-width: 481px) and (max-width: 849px) {
   footer .form {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -596,26 +612,18 @@ footer .form .footbtn:hover {
 @-webkit-keyframes homepg {
   from {
     opacity: 0;
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
   }
 }
 
 @keyframes homepg {
   from {
     opacity: 0;
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
   }
   to {
     opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
   }
 }
 
