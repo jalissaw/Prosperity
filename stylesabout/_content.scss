@@ -10,9 +10,9 @@ main {
         position: relative;
         height: 50vh;
         width: 100%;
-        color: midnightblue;
-        border-bottom: solid 2px rgba(201, 202, 206, 0.2);
-        border-top: solid 2px rgba(201, 202, 206, 0.2);
+        color: $darkblue;
+        border-bottom: solid 2px $lightgrey;
+        border-top: solid 2px $lightgrey;
 
         .abouttitle {
             font-size: 2.3em;
@@ -40,7 +40,7 @@ main {
 
         .infotitle {
             padding-bottom: 8px;
-            border-bottom: 1.5px solid rgb(35, 151, 236);
+            border-bottom: 1.5px solid $lightblue;
         }
 
         .info {

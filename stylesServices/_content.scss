@@ -1,0 +1,107 @@
+main {
+    width: 100%;
+
+    .heroservices {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 50vh;
+        width: 100%;
+        color: $darkblue;
+        border-top: solid 2px $lightgrey;
+
+        .servicetitle {
+            font-size: 2.3em;
+            text-transform: uppercase;
+            text-align: center;
+            border-bottom: 2px solid lightgrey;
+            z-index: 1;
+        }
+
+        .subheading {
+            font-size: 1.2em;
+            font-weight: 600;
+            font-style: italic;
+            color: black;
+        }
+
+        .carhauler {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            opacity: 0.45;
+            object-fit: cover;
+        }
+    }
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        width: 100%;
+        background: $lightgrey;
+
+        .introtitle {
+            font-size: 1.3em;
+            border-bottom: solid 2px $lightblue;
+            text-transform: uppercase;
+            padding-bottom: 8px;
+        }
+
+        .introsaying {
+            width: 60%;
+            line-height: 25px;
+            text-align: center;
+            padding-top: 8px;
+        }
+    }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        .haul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            width: 100%;
+        }
+
+        .largetitle {
+            color: $darkblue;
+        }
+
+        .smalltitle {
+            color: $lightblue;
+        }
+
+        .img {
+            opacity: 0.45;
+            box-shadow: 1.5px 1.5px 3px $darkblue;
+        }
+
+        .freighttitle {
+            padding-bottom: 8px;
+            text-transform: uppercase;
+            font-size: 1.6em;
+            border-bottom: 2px solid lightgrey;
+        }
+
+        .list {
+            list-style-type: none;
+            
+            
+            .items {
+                margin: 10px 0px;
+                font-size: 1.1em;
+            }
+        }
+    }
+}

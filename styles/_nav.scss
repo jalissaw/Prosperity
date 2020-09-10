@@ -15,7 +15,7 @@
      span {
         padding: 10px;
         font-size: 1.2em;
-        color: midnightblue;
+        color: $darkblue;
         margin-left: 100px;
     }
 
@@ -33,11 +33,11 @@
             font-size: 1.2em;
             padding: 10px;
             transition: ease-in 0.3s;
-            color: darkblue;
+            color: $darkblue;
 
             &:hover {
                 padding: 10px;
-                background: darkblue;
+                background: $darkblue;
                 letter-spacing: 2px;
                 color: white;
             }
@@ -56,7 +56,7 @@
     width: 100%;
     z-index: 2;
     transition: ease-in-out 0.2s 0.25s;
-    background: rgb(35, 151, 236);
+    background: $lightblue;
     opacity: 0;
 
     @media #{$menu} {
