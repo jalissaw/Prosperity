@@ -605,8 +605,8 @@ footer .form .footbtn:hover {
 }
 
 .homepagetransition {
-  -webkit-animation: homepg 0.75s;
-          animation: homepg 0.75s;
+  -webkit-animation: homepg 1.1s;
+          animation: homepg 1.1s;
 }
 
 @-webkit-keyframes homepg {
