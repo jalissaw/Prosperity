@@ -286,6 +286,10 @@ main .aboutinfo .image {
   padding-left: 20px;
 }
 
+main .aboutinfo .image .name {
+  padding-top: 8px;
+}
+
 main .aboutinfo .image .subheading {
   color: midnightblue;
   font-style: oblique;

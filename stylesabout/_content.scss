@@ -73,6 +73,10 @@ main {
             flex: 1 1 300px;
             padding-left: 20px;
 
+            .name {
+                padding-top: 8px;
+            }
+
             .subheading {
                 color: $darkblue;
                 font-style: oblique;

@@ -21,7 +21,8 @@ toggler.addEventListener('click', () => {
 })
 
 
-//remove links and menu when click on link
+//remove links and menu when link is clicked
+//get rid of color of span on click as well
 function removeMenu() {
     for (let i = 0; i < aLinks.length; i++) {
         aLinks[i].addEventListener('click', () => {
