@@ -3,6 +3,10 @@ const showMenu = document.querySelector('.showmenu');
 const links = document.querySelectorAll('.showlink');
 const aLinks = document.querySelectorAll('.showlink a');
 const footBtn = document.querySelector('.footbtn');
+const hamburgerSlashOne = document.querySelector('.top');
+const hamburgerSlashTwo = document.querySelector('.bottom');
+
+
 
 // toggle function on click of menu
 toggler.addEventListener('click', () => {
@@ -12,6 +16,8 @@ toggler.addEventListener('click', () => {
         }, 150 * i);
     }
     showMenu.classList.toggle("appear")
+    hamburgerSlashOne.classList.toggle("color")
+    hamburgerSlashTwo.classList.toggle("color")
 })
 
 

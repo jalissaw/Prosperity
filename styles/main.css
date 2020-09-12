@@ -208,7 +208,7 @@ header .hero .intro .btn:hover {
   z-index: 2;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
-  background: #2397ec;
+  background: midnightblue;
   opacity: 0;
 }
 
@@ -260,9 +260,6 @@ header .hero .intro .btn:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -295,16 +292,23 @@ header .hero .intro .btn:hover {
   position: absolute;
   width: 24px;
   height: 2px;
-  background: black;
+  background: midnightblue;
 }
 
-.menu span:before {
-  content: '';
+.menu span.color {
+  background: white;
+}
+
+.menu span:nth-child(2) {
   position: absolute;
-  top: -8px;
+  top: 15px;
+  background: midnightblue;
   width: 32px;
   height: 2px;
-  background: black;
+}
+
+.menu span:nth-child(2).color {
+  background: white;
 }
 
 .about {

@@ -56,7 +56,7 @@
     width: 0%;
     z-index: 2;
     transition: ease-in-out 0.3s;
-    background: $lightblue;
+    background: $darkblue;
     opacity: 0;
 
     @media #{$menu} {
@@ -101,7 +101,6 @@
 .menu {
     position: fixed;
     display: flex;
-    justify-content: center;
     align-items: center;
     width: 50px;
     height: 50px;
@@ -129,15 +128,24 @@
         position: absolute;
         width: 24px;
         height: 2px;
-        background: black;
+        background: $darkblue;
 
-        &:before {
-            content: '';
-            position: absolute;
-            top: -8px;
-            width: 32px;
-            height: 2px;
-            background: black;
+        &.color {
+            background: white;
+        }
+
+    }
+
+        span:nth-child(2) {
+        position: absolute;
+        top: 15px;
+        background: $darkblue;
+        width: 32px;
+        height: 2px;
+
+        &.color {
+            background: white;
         }
     }
+
 }
