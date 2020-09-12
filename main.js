@@ -27,6 +27,8 @@ function removeMenu() {
         aLinks[i].addEventListener('click', () => {
             showMenu.classList.remove('appear')
             links[i].classList.remove("appear");
+            hamburgerSlashOne.classList.remove("color")
+            hamburgerSlashTwo.classList.remove("color")
         })
     }
 }
