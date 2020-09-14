@@ -157,11 +157,19 @@ header .hero .intro .btn:hover {
   }
 }
 
-.nav span {
-  padding: 10px;
-  font-size: 1.2em;
-  color: midnightblue;
-  margin-left: 100px;
+.nav .logoimg {
+  height: 50px;
+  width: 60px;
+  margin-top: 20px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .nav .logoimg {
+    height: 80px;
+    width: 95px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
 .nav .links {
