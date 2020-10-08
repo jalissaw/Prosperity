@@ -541,11 +541,8 @@ footer .form {
 
 @media (min-width: 0px) and (max-width: 480px) {
   footer .form {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 20px;
-    width: 100%;
+    margin-top: 30px;
+    width: 80%;
   }
 }
 
@@ -554,13 +551,13 @@ footer .form {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 70%;
   }
 }
 
 footer .form .textfields {
-  width: 80%;
+  width: 90%;
   height: 35px;
   outline: none;
   border: none;
@@ -589,7 +586,7 @@ footer .form input[type="email"] {
 }
 
 footer .form .message {
-  width: 80%;
+  width: 90%;
   height: 200px;
   resize: vertical;
   border: none;
@@ -614,6 +611,21 @@ footer .form .footbtn {
 footer .form .footbtn:hover {
   cursor: pointer;
   border: dotted 10px midnightblue;
+}
+
+footer .socialmedia .fab {
+  color: midnightblue;
+  font-size: 2.4em;
+  padding-right: 10px;
+  padding-top: 5px;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+}
+
+footer .socialmedia .fab:hover {
+  cursor: pointer;
+  -webkit-transform: rotate(10deg);
+          transform: rotate(10deg);
 }
 
 .homepagetransition {
