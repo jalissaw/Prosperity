@@ -52,19 +52,8 @@ main {
             .infotitle {
                 padding-bottom: 8px;
                 border-bottom: 1.5px solid $lightblue;
-
                 position: relative;
 
-                &::before{
-                    content: 'Our Mission';
-                    position: absolute;
-                    top: -20px;
-                    left: -75px;
-                    color: $lightgrey;
-                    font-size: 4rem;
-                    width: 500px;
-                    z-index: -1;
-                }
             }
 
             .info {

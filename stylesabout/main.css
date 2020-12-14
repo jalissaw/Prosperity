@@ -253,17 +253,6 @@ main .aboutinfo .information .infotitle {
   position: relative;
 }
 
-main .aboutinfo .information .infotitle::before {
-  content: 'Our Mission';
-  position: absolute;
-  top: -20px;
-  left: -75px;
-  color: rgba(201, 202, 206, 0.2);
-  font-size: 4rem;
-  width: 500px;
-  z-index: -1;
-}
-
 main .aboutinfo .information .info {
   font-size: 1.02em;
   width: 75%;
