@@ -195,7 +195,7 @@ main .heroabout {
 }
 
 main .heroabout .abouttitle {
-  font-size: 2.3em;
+  font-size: 2.3rem;
   text-transform: uppercase;
   text-align: center;
   z-index: 1;
@@ -250,6 +250,18 @@ main .aboutinfo .information {
 main .aboutinfo .information .infotitle {
   padding-bottom: 8px;
   border-bottom: 1.5px solid #2397ec;
+  position: relative;
+}
+
+main .aboutinfo .information .infotitle::before {
+  content: 'Our Mission';
+  position: absolute;
+  top: -20px;
+  left: -75px;
+  color: rgba(201, 202, 206, 0.2);
+  font-size: 4rem;
+  width: 500px;
+  z-index: -1;
 }
 
 main .aboutinfo .information .info {

@@ -11,9 +11,9 @@ header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -21,58 +21,44 @@ header .hero {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 90vh;
-  width: 70%;
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  header .hero {
-    width: 80%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 849px) {
-  header .hero {
-    width: 85%;
-  }
+  height: 100vh;
+  width: 100%;
 }
 
 header .hero .heropic {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 75%;
-  height: 85%;
-  opacity: 0.45;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: right;
+  z-index: -1;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
   header .hero .heropic {
-    height: 50%;
-    width: 100%;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 849px) {
-  header .hero .heropic {
-    height: 60%;
-    width: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
 }
 
 header .hero .intro {
-  -webkit-transform: translate(20%, -60%);
-          transform: translate(20%, -60%);
+  text-align: center;
+  margin-bottom: 100px;
+  padding: 0px 20px;
 }
 
 header .hero .intro .title {
   text-transform: uppercase;
   font-size: 3em;
   letter-spacing: 2px;
-  color: midnightblue;
+  color: white;
+  text-shadow: black 2px 2px 10px;
+  text-align: center;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -90,6 +76,7 @@ header .hero .intro .title {
 header .hero .intro .motto {
   padding-bottom: 12px;
   font-size: 1.7em;
+  text-align: center;
   font-style: oblique;
 }
 
@@ -109,7 +96,7 @@ header .hero .intro .btn {
   border: none;
   outline: none;
   width: 115px;
-  background: #2397ec;
+  background: #88b1e3;
   padding: 15px;
   color: white;
   font-size: 1em;
@@ -132,8 +119,8 @@ header .hero .intro .btn {
 header .hero .intro .btn:hover {
   cursor: pointer;
   background: white;
-  border: midnightblue 2px solid;
-  color: midnightblue;
+  border: #1b334e 2px solid;
+  color: #1b334e;
 }
 
 .nav {
@@ -190,12 +177,12 @@ header .hero .intro .btn:hover {
   padding: 10px;
   -webkit-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
-  color: midnightblue;
+  color: #1b334e;
 }
 
 .nav .links a:hover {
   padding: 10px;
-  background: midnightblue;
+  background: #1b334e;
   letter-spacing: 2px;
   color: white;
 }
@@ -216,7 +203,7 @@ header .hero .intro .btn:hover {
   z-index: 2;
   -webkit-transition: ease-in-out 0.3s;
   transition: ease-in-out 0.3s;
-  background: midnightblue;
+  background: #1b334e;
   opacity: 0;
 }
 
@@ -300,7 +287,7 @@ header .hero .intro .btn:hover {
   position: absolute;
   width: 24px;
   height: 2px;
-  background: midnightblue;
+  background: #1b334e;
 }
 
 .menu span.color {
@@ -310,7 +297,7 @@ header .hero .intro .btn:hover {
 .menu span:nth-child(2) {
   position: absolute;
   top: 15px;
-  background: midnightblue;
+  background: #1b334e;
   width: 32px;
   height: 2px;
 }
@@ -323,7 +310,62 @@ header .hero .intro .btn:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
+  overflow: hidden;
+}
+
+.about .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 35px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 600px;
+          flex: 1 1 600px;
+  overflow: hidden;
+}
+
+.about .description .introtitle {
+  text-transform: uppercase;
+  color: #1b334e;
+  font-size: 2rem;
+  padding: 5px 10px 10px 5px;
+  position: relative;
+  border-bottom: 2px solid #1b334e;
+}
+
+.about .description .introtitle::before {
+  content: 'WHAT WE DO';
+  position: absolute;
+  top: -20px;
+  left: -75px;
+  color: rgba(201, 202, 206, 0.2);
+  font-size: 4rem;
+  width: 500px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .about .description .introtitle::before {
+    font-size: 3rem;
+  }
+}
+
+.about .description .introscript {
+  width: 85%;
+  line-height: 25px;
+  padding: 20px 0px;
 }
 
 .about .containservices {
@@ -338,6 +380,33 @@ header .hero .intro .btn:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 500px;
+          flex: 1 1 500px;
+}
+
+.about .containservices .freights {
+  background: #dfeaf7;
+}
+
+.about .containservices .freights .fas {
+  color: #88b1e3;
+}
+
+.about .containservices .cargo {
+  background: #ebf2fa;
+}
+
+.about .containservices .cargo .fas {
+  color: #1b334e;
+}
+
+.about .containservices .shipping {
+  background: #f3f7fc;
+}
+
+.about .containservices .shipping .fas {
+  color: rgba(72, 74, 80, 0.2);
 }
 
 .about .containservices .service {
@@ -359,13 +428,13 @@ header .hero .intro .btn:hover {
   text-align: center;
   padding: 10px 15px;
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 325px;
-          flex: 1 1 325px;
+      -ms-flex: 1 1 275px;
+          flex: 1 1 275px;
+  height: 225px;
 }
 
 .about .containservices .service .fas {
-  font-size: 1.7em;
-  color: #2397ec;
+  font-size: 1.6em;
   padding: 12px;
   border-radius: 8px;
 }
@@ -373,11 +442,12 @@ header .hero .intro .btn:hover {
 .about .containservices .service .servicetitle {
   color: black;
   padding: 8px 0px;
-  font-size: 1.4em;
+  font-size: 1.1rem;
   border-bottom: 1.5px solid lightgrey;
 }
 
 .about .containservices .service .serviceinfo {
+  font-size: 0.9rem;
   padding-top: 10px;
   width: 80%;
   line-height: 25px;
@@ -387,10 +457,55 @@ header .hero .intro .btn:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
-  height: 50vh;
   position: relative;
-  background: rgba(201, 202, 206, 0.2);
+  overflow: hidden;
+}
+
+.promo .help {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px;
+}
+
+.promo .help .helptitle {
+  text-transform: uppercase;
+  color: #88b1e3;
+  font-size: 2rem;
+  padding: 5px 10px 10px 5px;
+  text-align: center;
+  position: relative;
+}
+
+.promo .help .helptitle::before {
+  content: 'How We Can Help You';
+  position: absolute;
+  top: -20px;
+  left: -75px;
+  color: rgba(201, 202, 206, 0.2);
+  font-size: 3rem;
+  width: 500px;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promo .help .helptitle::before {
+    font-size: 2rem;
+  }
 }
 
 .promo .contactinfo {
@@ -420,7 +535,7 @@ header .hero .intro .btn:hover {
 
 .promo .contactinfo .contacttitle {
   font-size: 1.6em;
-  border-bottom: solid 2px #2397ec;
+  border-bottom: solid 2px #88b1e3;
   padding: 8px 0px;
 }
 
@@ -456,6 +571,13 @@ header .hero .intro .btn:hover {
   list-style-type: none;
   margin: 8px 0px;
   font-weight: 100;
+  position: relative;
+}
+
+.promo .contactinfo .required .fas {
+  position: absolute;
+  left: -22px;
+  color: #88b1e3;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -524,7 +646,7 @@ footer {
 }
 
 footer .logotitle {
-  color: midnightblue;
+  color: #1b334e;
   font-size: 1.5em;
 }
 
@@ -566,19 +688,19 @@ footer .form .textfields {
 }
 
 footer .form ::-webkit-input-placeholder {
-  color: midnightblue;
+  color: #1b334e;
 }
 
 footer .form :-ms-input-placeholder {
-  color: midnightblue;
+  color: #1b334e;
 }
 
 footer .form ::-ms-input-placeholder {
-  color: midnightblue;
+  color: #1b334e;
 }
 
 footer .form ::placeholder {
-  color: midnightblue;
+  color: #1b334e;
 }
 
 footer .form input[type="email"] {
@@ -602,7 +724,7 @@ footer .form .footbtn {
   border: none;
   outline: none;
   height: 40px;
-  background: midnightblue;
+  background: #1b334e;
   color: white;
   -webkit-transition: ease-in-out 0.4s;
   transition: ease-in-out 0.4s;
@@ -610,11 +732,11 @@ footer .form .footbtn {
 
 footer .form .footbtn:hover {
   cursor: pointer;
-  border: dotted 10px midnightblue;
+  border: dotted 10px #1b334e;
 }
 
 footer .socialmedia .fab {
-  color: midnightblue;
+  color: #1b334e;
   font-size: 2.4em;
   padding-right: 10px;
   padding-top: 5px;

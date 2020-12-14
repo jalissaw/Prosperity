@@ -2,13 +2,78 @@
 //section with the icons and text
 .about {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
+    overflow: hidden;
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 35px;
+        flex: 1 1 600px;
+        overflow: hidden;
+
+        .introtitle{
+            text-transform: uppercase;
+            color: $darkblue;
+            font-size: 2rem;
+            padding: 5px 10px 10px 5px;
+            position: relative;
+            border-bottom: 2px solid $darkblue;
+
+            &::before{
+                content: 'WHAT WE DO';
+                position: absolute;
+                top: -20px;
+                left: -75px;
+                color: $lightgrey;
+                font-size: 4rem;
+                width: 500px;
+
+                @media #{$allphones} {
+                    font-size: 3rem;
+                }
+            }
+        }
+
+        .introscript{
+            width: 85%;
+            line-height: 25px;
+            padding: 20px 0px;
+        }
+    }
 
     .containservices {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        flex: 1 1 500px;
+        
+        
+        .freights {
+            background: lighten($color: $lightblue, $amount: 21%);
+
+            .fas {
+                color: $lightblue;
+            }
+        }
+
+        .cargo {
+            background: lighten($color: $lightblue, $amount: 24%);
+            .fas {
+                color:$darkblue;
+            }
+        }
+
+        .shipping {
+            background: lighten($color: $lightblue, $amount: 26%);
+            .fas {
+                color: darken($color: $lightgrey, $amount: 50%)
+            }
+        }
 
             .service {
                 display: flex;
@@ -18,12 +83,11 @@
                 align-items: center;
                 text-align: center;
                 padding: 10px 15px;
-                flex: 1 1 325px;
-               
+                flex: 1 1 275px;
+                height: 225px;
                 
                 .fas {
-                    font-size: 1.7em;
-                    color: rgb(35, 151, 236);
+                    font-size: 1.6em;
                     padding: 12px;
                     border-radius: 8px;
 
@@ -32,11 +96,12 @@
                 .servicetitle {
                     color: black;
                     padding: 8px 0px;
-                    font-size: 1.4em;
+                    font-size: 1.1rem;
                     border-bottom: 1.5px solid lightgrey;
                 }
 
                 .serviceinfo {
+                    font-size: 0.9rem;
                     padding-top: 10px;
                     width: 80%;
                     line-height: 25px;
@@ -50,10 +115,42 @@
 
     .promo {
         display: flex; 
+        flex-direction: column;
         width: 100%;
-        height: 50vh;
         position: relative;
-        background: $lightgrey;
+        overflow: hidden;
+        
+        .help {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+    
+            .helptitle{
+                text-transform: uppercase;
+                color: $lightblue;
+                font-size: 2rem;
+                padding: 5px 10px 10px 5px;
+                text-align: center;
+                position: relative;
+    
+                &::before{
+                    content: 'How We Can Help You';
+                    position: absolute;
+                    top: -20px;
+                    left: -75px;
+                    color: $lightgrey;
+                    font-size: 3rem;
+                    width: 500px;
+
+                    @media #{$allphones} {
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+        
 
         .contactinfo {
             display: flex;
@@ -97,6 +194,13 @@
                 list-style-type: none;
                 margin: 8px 0px;
                 font-weight: 100;
+                position: relative;
+
+                .fas {
+                    position: absolute;
+                    left: -22px;
+                    color: $lightblue;
+                }
                 
 
                 @media #{$allphones} {
