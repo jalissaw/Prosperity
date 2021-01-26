@@ -31,6 +31,7 @@
                 color: $lightgrey;
                 font-size: 4rem;
                 width: 500px;
+                z-index: -5;
 
                 @media #{$allphones} {
                     font-size: 3rem;
@@ -143,6 +144,7 @@
                     color: $lightgrey;
                     font-size: 3rem;
                     width: 500px;
+                    z-index: -5;
 
                     @media #{$allphones} {
                         font-size: 2rem;

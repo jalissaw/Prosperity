@@ -354,6 +354,7 @@ header .hero .intro .btn:hover {
   color: rgba(201, 202, 206, 0.2);
   font-size: 4rem;
   width: 500px;
+  z-index: -5;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -500,6 +501,7 @@ header .hero .intro .btn:hover {
   color: rgba(201, 202, 206, 0.2);
   font-size: 3rem;
   width: 500px;
+  z-index: -5;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
