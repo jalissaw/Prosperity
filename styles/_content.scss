@@ -22,21 +22,6 @@
             padding: 5px 10px 10px 5px;
             position: relative;
             border-bottom: 2px solid $darkblue;
-
-            &::before{
-                content: 'WHAT WE DO';
-                position: absolute;
-                top: -20px;
-                left: -75px;
-                color: $lightgrey;
-                font-size: 4rem;
-                width: 500px;
-                z-index: -5;
-
-                @media #{$allphones} {
-                    font-size: 3rem;
-                }
-            }
         }
 
         .introscript{
@@ -129,27 +114,34 @@
             padding: 30px;
     
             .helptitle{
+                position: relative;
                 text-transform: uppercase;
                 color: $lightblue;
                 font-size: 2rem;
                 padding: 5px 10px 10px 5px;
                 text-align: center;
                 position: relative;
-    
-                &::before{
-                    content: 'How We Can Help You';
+                // border-bottom: 2px solid $lightblue;
+
+                &::after {
+                    content: '';
                     position: absolute;
-                    top: -20px;
-                    left: -75px;
-                    color: $lightgrey;
-                    font-size: 3rem;
-                    width: 500px;
-                    z-index: -5;
+                    width: 175px;
+                    height: 2px;
+                    background: $lightblue;
+                    left: 100px;
+                    bottom: 0;
 
                     @media #{$allphones} {
-                        font-size: 2rem;
+                        left: 50px;
                     }
                 }
+            }
+
+            .jointitle {
+                font-style: oblique;
+                font-size: 1.5rem;
+                margin-top: 10px;
             }
         }
         

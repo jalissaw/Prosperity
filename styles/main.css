@@ -346,23 +346,6 @@ header .hero .intro .btn:hover {
   border-bottom: 2px solid #1b334e;
 }
 
-.about .description .introtitle::before {
-  content: 'WHAT WE DO';
-  position: absolute;
-  top: -20px;
-  left: -75px;
-  color: rgba(201, 202, 206, 0.2);
-  font-size: 4rem;
-  width: 500px;
-  z-index: -5;
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  .about .description .introtitle::before {
-    font-size: 3rem;
-  }
-}
-
 .about .description .introscript {
   width: 85%;
   line-height: 25px;
@@ -485,6 +468,7 @@ header .hero .intro .btn:hover {
 }
 
 .promo .help .helptitle {
+  position: relative;
   text-transform: uppercase;
   color: #88b1e3;
   font-size: 2rem;
@@ -493,21 +477,26 @@ header .hero .intro .btn:hover {
   position: relative;
 }
 
-.promo .help .helptitle::before {
-  content: 'How We Can Help You';
+.promo .help .helptitle::after {
+  content: '';
   position: absolute;
-  top: -20px;
-  left: -75px;
-  color: rgba(201, 202, 206, 0.2);
-  font-size: 3rem;
-  width: 500px;
-  z-index: -5;
+  width: 175px;
+  height: 2px;
+  background: #88b1e3;
+  left: 100px;
+  bottom: 0;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
-  .promo .help .helptitle::before {
-    font-size: 2rem;
+  .promo .help .helptitle::after {
+    left: 50px;
   }
+}
+
+.promo .help .jointitle {
+  font-style: oblique;
+  font-size: 1.5rem;
+  margin-top: 10px;
 }
 
 .promo .contactinfo {
