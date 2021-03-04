@@ -11,9 +11,6 @@ header .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -23,6 +20,18 @@ header .hero {
           flex-direction: row;
   height: 100vh;
   width: 100%;
+  position: absolute;
+}
+
+header .hero .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(31, 31, 31, 0.3)), to(rgba(29, 29, 29, 0.3)));
+  background: linear-gradient(rgba(31, 31, 31, 0.3), rgba(29, 29, 29, 0.3));
+  z-index: 1;
 }
 
 header .hero .heropic {
@@ -31,39 +40,31 @@ header .hero .heropic {
   bottom: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.7;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: -1;
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  header .hero .heropic {
-    width: -webkit-fit-content;
-    width: -moz-fit-content;
-    width: fit-content;
-  }
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 header .hero .intro {
-  text-align: center;
   margin-bottom: 100px;
-  padding: 0px 20px;
+  padding-left: 50px;
+  z-index: 5;
 }
 
 header .hero .intro .title {
   text-transform: uppercase;
-  font-size: 3em;
-  letter-spacing: 2px;
+  font-size: 2.8em;
+  letter-spacing: 1px;
   color: white;
   text-shadow: black 2px 2px 10px;
-  text-align: center;
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   header .hero .intro .title {
-    font-size: 1.3em;
+    font-size: 1.7em;
+    padding-right: 10px;
   }
 }
 
@@ -74,21 +75,18 @@ header .hero .intro .title {
 }
 
 header .hero .intro .motto {
-  padding-bottom: 12px;
-  font-size: 1.7em;
-  text-align: center;
-  font-style: oblique;
+  padding: 10px;
+  font-size: 1.2em;
+  color: white;
+  font-weight: 100;
+  background: #1b334e;
+  letter-spacing: .5px;
+  opacity: 0.85;
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   header .hero .intro .motto {
-    display: none;
-  }
-}
-
-@media (max-width: 1000px) {
-  header .hero .intro .motto {
-    display: none;
+    font-size: .9rem;
   }
 }
 
@@ -104,7 +102,7 @@ header .hero .intro .btn {
   transition: ease-in 0.25s;
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   header .hero .intro .btn {
     display: none;
   }
@@ -135,7 +133,7 @@ header .hero .intro .btn:hover {
           align-items: center;
   height: 10vh;
   padding: 0px 50px;
-  color: white;
+  background: white;
 }
 
 @media (max-width: 1000px) {
@@ -150,7 +148,7 @@ header .hero .intro .btn:hover {
   margin-top: 20px;
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   .nav .logoimg {
     height: 80px;
     width: 95px;
@@ -320,10 +318,6 @@ header .hero .intro .btn:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -331,25 +325,86 @@ header .hero .intro .btn:hover {
       -ms-flex-align: center;
           align-items: center;
   padding-top: 35px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 600px;
-          flex: 1 1 600px;
   overflow: hidden;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 125px 0px;
 }
 
-.about .description .introtitle {
+@media (min-width: 0px) and (max-width: 540px) {
+  .about .description {
+    padding: 0px;
+    padding-top: 50px;
+  }
+}
+
+.about .description .info-about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
+  padding: 50px;
+}
+
+.about .description .info-about .introtitle {
   text-transform: uppercase;
   color: #1b334e;
   font-size: 2rem;
   padding: 5px 10px 10px 5px;
   position: relative;
-  border-bottom: 2px solid #1b334e;
 }
 
-.about .description .introscript {
-  width: 85%;
+.about .description .info-about .introscript {
   line-height: 25px;
   padding: 20px 0px;
+}
+
+.about .description .info-about .info-button {
+  text-decoration: none;
+  background: #1b334e;
+  padding: 10px;
+  color: white;
+  width: 100px;
+  text-align: center;
+}
+
+.about .description .info-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 350px;
+          flex: 1 1 350px;
+  padding-left: 50px;
+}
+
+@media (min-width: 0px) and (max-width: 540px) {
+  .about .description .info-img {
+    padding-left: 0px;
+  }
+}
+
+.about .description .info-img .road-img {
+  width: 450px;
+  height: 350px;
+  -webkit-box-shadow: 1px 1px 3.5px #1b334e;
+          box-shadow: 1px 1px 3.5px #1b334e;
 }
 
 .about .containservices {
@@ -367,33 +422,45 @@ header .hero .intro .btn:hover {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 500px;
           flex: 1 1 500px;
+  background: #1b334e;
+  padding: 100px 25px;
 }
 
-.about .containservices .freights {
-  background: #dfeaf7;
+@media (min-width: 0px) and (max-width: 540px) {
+  .about .containservices {
+    padding: 100px 0px;
+  }
 }
 
-.about .containservices .freights .fas {
-  color: #88b1e3;
+.about .containservices .title-service {
+  font-size: 2rem;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  color: white;
 }
 
-.about .containservices .cargo {
-  background: #ebf2fa;
+@media (min-width: 0px) and (max-width: 540px) {
+  .about .containservices .title-service {
+    padding: 25px;
+  }
 }
 
-.about .containservices .cargo .fas {
-  color: #1b334e;
+.about .containservices .services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
 }
 
-.about .containservices .shipping {
-  background: #f3f7fc;
-}
-
-.about .containservices .shipping .fas {
-  color: rgba(72, 74, 80, 0.2);
-}
-
-.about .containservices .service {
+.about .containservices .services .service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -411,26 +478,29 @@ header .hero .intro .btn:hover {
           align-items: center;
   text-align: center;
   padding: 10px 15px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 275px;
-          flex: 1 1 275px;
-  height: 225px;
+  width: 300px;
+  height: 300px;
+  -webkit-box-shadow: 1px 1px 1px #1b334e;
+          box-shadow: 1px 1px 1px #1b334e;
+  margin: 20px;
+  background: white;
 }
 
-.about .containservices .service .fas {
-  font-size: 1.6em;
+.about .containservices .services .service .fas {
+  font-size: 2rem;
+  color: #1b334e;
   padding: 12px;
   border-radius: 8px;
 }
 
-.about .containservices .service .servicetitle {
+.about .containservices .services .service .servicetitle {
   color: black;
   padding: 8px 0px;
   font-size: 1.1rem;
   border-bottom: 1.5px solid lightgrey;
 }
 
-.about .containservices .service .serviceinfo {
+.about .containservices .services .service .serviceinfo {
   font-size: 0.9rem;
   padding-top: 10px;
   width: 80%;
@@ -470,27 +540,11 @@ header .hero .intro .btn:hover {
 .promo .help .helptitle {
   position: relative;
   text-transform: uppercase;
-  color: #88b1e3;
+  color: #1b334e;
   font-size: 2rem;
   padding: 5px 10px 10px 5px;
   text-align: center;
   position: relative;
-}
-
-.promo .help .helptitle::after {
-  content: '';
-  position: absolute;
-  width: 175px;
-  height: 2px;
-  background: #88b1e3;
-  left: 100px;
-  bottom: 0;
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  .promo .help .helptitle::after {
-    left: 50px;
-  }
 }
 
 .promo .help .jointitle {
@@ -518,9 +572,9 @@ header .hero .intro .btn:hover {
   padding: 15px;
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   .promo .contactinfo {
-    padding: 0px 25px;
+    padding: 40px 25px;
   }
 }
 
@@ -536,7 +590,7 @@ header .hero .intro .btn:hover {
   }
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   .promo .contactinfo .contacttitle {
     font-size: 1.4em;
   }
@@ -562,16 +616,22 @@ header .hero .intro .btn:hover {
   list-style-type: none;
   margin: 8px 0px;
   font-weight: 100;
+  color: #1b334e;
+  padding: 25px;
+  border-bottom: 1px solid #1b334e;
+  border-top: 1px solid #1b334e;
   position: relative;
+  width: 80%;
 }
 
 .promo .contactinfo .required .fas {
   position: absolute;
-  left: -22px;
-  color: #88b1e3;
+  margin-right: 25px;
+  left: -15px;
+  color: #1b334e;
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   .promo .contactinfo .required {
     font-size: 1em;
   }
@@ -586,7 +646,7 @@ footer {
   padding: 30px 0px;
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -622,7 +682,7 @@ footer {
   }
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   footer .footerlogo {
     font-size: 1.1em;
     width: 80%;
@@ -652,7 +712,7 @@ footer .form {
   width: 35%;
 }
 
-@media (min-width: 0px) and (max-width: 480px) {
+@media (min-width: 0px) and (max-width: 540px) {
   footer .form {
     margin-top: 30px;
     width: 80%;

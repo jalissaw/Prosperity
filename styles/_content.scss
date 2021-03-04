@@ -8,27 +8,70 @@
 
     .description {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         padding-top: 35px;
-        flex: 1 1 600px;
         overflow: hidden;
+        flex-direction: row-reverse;
+        flex-wrap: wrap;
+        padding: 125px 0px;
 
-        .introtitle{
-            text-transform: uppercase;
-            color: $darkblue;
-            font-size: 2rem;
-            padding: 5px 10px 10px 5px;
-            position: relative;
-            border-bottom: 2px solid $darkblue;
+        @media #{$allphones} {
+            padding: 0px;
+            padding-top: 50px;
         }
 
-        .introscript{
-            width: 85%;
-            line-height: 25px;
-            padding: 20px 0px;
+        .info-about {
+
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex: 1 1 400px;
+            padding: 50px;
+
+            
+            .introtitle{
+                text-transform: uppercase;
+                color: $darkblue;
+                font-size: 2rem;
+                padding: 5px 10px 10px 5px;
+                position: relative;
+            }
+    
+            .introscript{
+                line-height: 25px;
+                padding: 20px 0px;
+            }
+
+            .info-button {
+                text-decoration: none;
+                background: $darkblue;
+                padding: 10px;
+                color: white;
+                width: 100px;
+                text-align: center;
+            }
+        
         }
+
+        .info-img {
+            display: flex;
+            justify-content: center;
+            flex: 1 1 350px;
+            padding-left: 50px;
+
+            @media #{$allphones} {
+                padding-left: 0px;
+            }
+
+            .road-img {
+                width: 450px;
+                height: 350px;
+                box-shadow: 1px 1px 3.5px $darkblue;
+            }
+
+        }
+
     }
 
     .containservices {
@@ -37,62 +80,71 @@
         justify-content: center;
         align-items: center;
         flex: 1 1 500px;
-        
-        
-        .freights {
-            background: lighten($color: $lightblue, $amount: 21%);
+        background: $darkblue;
+        padding: 100px 25px;
 
-            .fas {
-                color: $lightblue;
+        @media #{$allphones} {
+            padding: 100px 0px;
+           
+        }
+            
+        .title-service {
+            font-size: 2rem;
+            padding-bottom: 25px;
+            text-transform: uppercase;
+            color: white;
+
+            @media #{$allphones} {
+                padding: 25px;
+               
             }
         }
 
-        .cargo {
-            background: lighten($color: $lightblue, $amount: 24%);
-            .fas {
-                color:$darkblue;
-            }
-        }
+            .services {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
 
-        .shipping {
-            background: lighten($color: $lightblue, $amount: 26%);
-            .fas {
-                color: darken($color: $lightgrey, $amount: 50%)
-            }
-        }
-
-            .service {
-                display: flex;
-                flex-direction: column;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
-                text-align: center;
-                padding: 10px 15px;
-                flex: 1 1 275px;
-                height: 225px;
-                
-                .fas {
-                    font-size: 1.6em;
-                    padding: 12px;
-                    border-radius: 8px;
-
-                }
-
-                .servicetitle {
-                    color: black;
-                    padding: 8px 0px;
-                    font-size: 1.1rem;
-                    border-bottom: 1.5px solid lightgrey;
-                }
-
-                .serviceinfo {
-                    font-size: 0.9rem;
-                    padding-top: 10px;
-                    width: 80%;
-                    line-height: 25px;
+                .service {
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    text-align: center;
+                    padding: 10px 15px;
+                    width: 300px;
+                    height: 300px;
+                    box-shadow: 1px 1px 1px $darkblue;
+                    margin: 20px;
+                    background: white;
+                    
+                    
+                    .fas {
+                        font-size: 2rem;
+                        color: $darkblue;
+                        padding: 12px;
+                        border-radius: 8px;
+                    }
+    
+                    .servicetitle {
+                        color: black;
+                        padding: 8px 0px;
+                        font-size: 1.1rem;
+                        border-bottom: 1.5px solid lightgrey;
+                    }
+    
+                    .serviceinfo {
+                        font-size: 0.9rem;
+                        padding-top: 10px;
+                        width: 80%;
+                        line-height: 25px;
+                    }
                 }
             }
+            
 
         }
 
@@ -116,26 +168,12 @@
             .helptitle{
                 position: relative;
                 text-transform: uppercase;
-                color: $lightblue;
+                color: $darkblue;
                 font-size: 2rem;
                 padding: 5px 10px 10px 5px;
                 text-align: center;
                 position: relative;
-                // border-bottom: 2px solid $lightblue;
 
-                &::after {
-                    content: '';
-                    position: absolute;
-                    width: 175px;
-                    height: 2px;
-                    background: $lightblue;
-                    left: 100px;
-                    bottom: 0;
-
-                    @media #{$allphones} {
-                        left: 50px;
-                    }
-                }
             }
 
             .jointitle {
@@ -156,7 +194,7 @@
             padding: 15px;
 
             @media #{$allphones} {
-               padding: 0px 25px;
+               padding: 40px 25px;
             }
            
 
@@ -188,12 +226,18 @@
                 list-style-type: none;
                 margin: 8px 0px;
                 font-weight: 100;
+                color: $darkblue;
+                padding: 25px;
+                border-bottom: 1px solid $darkblue;
+                border-top: 1px solid $darkblue;
                 position: relative;
+                width: 80%;
 
                 .fas {
                     position: absolute;
-                    left: -22px;
-                    color: $lightblue;
+                    margin-right: 25px;
+                    left: -15px;
+                    color: $darkblue;
                 }
                 
 

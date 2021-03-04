@@ -7,7 +7,9 @@
     align-items: center;
     height: 10vh;
     padding: 0px 50px;
-    color: white;
+    background: white;
+    
+    
     @media #{$navgone} {
         display: none;
     }
