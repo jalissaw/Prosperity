@@ -68,6 +68,10 @@
                 width: 450px;
                 height: 350px;
                 box-shadow: 1px 1px 3.5px $darkblue;
+
+                @media #{$allphones} {
+                    width: 100%;
+                }
             }
 
         }

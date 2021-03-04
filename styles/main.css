@@ -50,7 +50,7 @@ header .hero .heropic {
 header .hero .intro {
   margin-bottom: 100px;
   padding-left: 50px;
-  z-index: 5;
+  z-index: 1;
 }
 
 header .hero .intro .title {
@@ -405,6 +405,12 @@ header .hero .intro .btn:hover {
   height: 350px;
   -webkit-box-shadow: 1px 1px 3.5px #1b334e;
           box-shadow: 1px 1px 3.5px #1b334e;
+}
+
+@media (min-width: 0px) and (max-width: 540px) {
+  .about .description .info-img .road-img {
+    width: 100%;
+  }
 }
 
 .about .containservices {
