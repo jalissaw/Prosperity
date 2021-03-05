@@ -86,8 +86,7 @@ main .heading-container {
 }
 
 main .heading-container .subheading {
-  background: #1b334e;
-  color: white;
+  color: #1b334e;
   padding: 25px;
   font-style: oblique;
   font-weight: 100;
