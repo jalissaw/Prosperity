@@ -243,6 +243,10 @@ main .aboutinfo .image .about-ceo {
   padding-top: 50px;
 }
 
+main .aboutinfo .image .about-ceo .seperate-para {
+  margin: 20px 0px;
+}
+
 main .aboutinfo .image .about-ceo .infotitle {
   padding-bottom: 12px;
   font-size: 2rem;
