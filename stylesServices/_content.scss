@@ -14,19 +14,19 @@ main {
         color: $darkblue;
 
         .servicetitle {
-            font-size: 2.3em;
+            font-size: 3rem;
             text-transform: uppercase;
             text-align: center;
-            border-bottom: 2px solid lightgrey;
             z-index: 1;
         }
 
         .subheading {
-            font-size: 1.2em;
-            font-weight: 600;
-            font-style: italic;
-            color: black;
-            padding-top: 8px;
+            background: $darkblue;
+            color: white;
+            padding: 10px;
+            font-weight: 100;
+            font-size: 1.4rem;
+            
         }
 
         .carhauler {
@@ -43,13 +43,11 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 40vh;
         width: 100%;
-        background: $lightgrey;
 
         .introtitle {
-            font-size: 1.3em;
-            border-bottom: solid 2px $lightblue;
+            font-size: 2em;
+            color: $darkblue;
             text-transform: uppercase;
             padding-bottom: 8px;
         }
@@ -74,10 +72,18 @@ main {
         justify-content: space-around;
         align-items: center;
 
+        // .largefreight {
+        //     @media #{$flexDirection} {
+                
+        //         flex-direction: column-reverse;
+        //     }
+        // }
+
         .haul {
             display: flex;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
             padding: 50px;
             width: 100%;
 
@@ -90,37 +96,34 @@ main {
         }
 
         .content {
+            display: flex;
+            justify-self: center;
+            flex-direction: column;
+            flex: 1 1 400px;
             padding: 20px;
         }
 
-        .largetitle {
-            color: $darkblue;
-        }
-
-        .smalltitle {
-            color: $lightblue;
-        }
 
         .img {
+            display: flex;
+            justify-content: center;
             width: 95%;
-            opacity: 0.45;
-            box-shadow: 1.5px 1.5px 3px $darkblue;
+            opacity: 0.9;
+            box-shadow: 1px 1px 3px $darkblue;
+            object-fit: cover;
         }
 
         .image {
-            @media #{$stablets} {
-                display: none;
-            }
-            @media #{$allphones} {
-                display: none;
-            }
+            display: flex;
+            justify-content: center;
+            flex: 1 1 400px;
         }
 
         .freighttitle {
             padding-bottom: 8px;
             text-transform: uppercase;
             font-size: 1.6em;
-            border-bottom: 2px solid lightgrey;
+            color: $darkblue;
 
             @media #{$allphones} {
                 font-size: 1.3em;
@@ -133,9 +136,20 @@ main {
             
             .items {
                 margin: 10px 0px;
-                font-size: 1.1em;
+                font-size: 1.2rem;
+                border-bottom: 1px solid $darkblue;
+                border-top: 1px solid $darkblue;
+                padding: 12px;
+                position: relative;
+                
                 @media #{$allphones} {
-                    font-size: 1em;
+                    font-size: 1rem;
+                }
+
+                .fas {
+                    position: absolute;
+                    left: -20px;
+                    color: $darkblue;
                 }
             }
         }
@@ -146,13 +160,15 @@ main {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        background: $lightgrey;
+        background: #1b334e;
         height: 30vh;
 
         .contactinfo {
             text-align: center;
             padding: 15px;
-            font-size: 1.4em;
+            font-size: 1.5rem;
+            color: white;
+            text-transform: uppercase;
         }
 
         .btn {
@@ -162,12 +178,11 @@ main {
             outline: none;
             border-radius: 4px;
             box-shadow: 1px 1px 1px black;
-            color: whitesmoke;
-            background: $darkblue;
+            background: white;
 
             a {
                 text-decoration: none;
-                color: whitesmoke;
+                color: $darkblue;
             }
 
             &:hover {

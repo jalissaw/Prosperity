@@ -25,19 +25,18 @@ main .heroservices {
 }
 
 main .heroservices .servicetitle {
-  font-size: 2.3em;
+  font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
-  border-bottom: 2px solid lightgrey;
   z-index: 1;
 }
 
 main .heroservices .subheading {
-  font-size: 1.2em;
-  font-weight: 600;
-  font-style: italic;
-  color: black;
-  padding-top: 8px;
+  background: #1b334e;
+  color: white;
+  padding: 10px;
+  font-weight: 100;
+  font-size: 1.4rem;
 }
 
 main .heroservices .carhauler {
@@ -63,14 +62,12 @@ main .intro {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40vh;
   width: 100%;
-  background: rgba(201, 202, 206, 0.2);
 }
 
 main .intro .introtitle {
-  font-size: 1.3em;
-  border-bottom: solid 2px #2397ec;
+  font-size: 2em;
+  color: #1b334e;
   text-transform: uppercase;
   padding-bottom: 8px;
 }
@@ -114,6 +111,8 @@ main .services .haul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 50px;
   width: 100%;
 }
@@ -131,41 +130,52 @@ main .services .haul {
 }
 
 main .services .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
   padding: 20px;
 }
 
-main .services .largetitle {
-  color: #1b334e;
-}
-
-main .services .smalltitle {
-  color: #2397ec;
-}
-
 main .services .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 95%;
-  opacity: 0.45;
-  -webkit-box-shadow: 1.5px 1.5px 3px #1b334e;
-          box-shadow: 1.5px 1.5px 3px #1b334e;
+  opacity: 0.9;
+  -webkit-box-shadow: 1px 1px 3px #1b334e;
+          box-shadow: 1px 1px 3px #1b334e;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-@media (min-width: 481px) and (max-width: 800px) {
-  main .services .image {
-    display: none;
-  }
-}
-
-@media (min-width: 0px) and (max-width: 480px) {
-  main .services .image {
-    display: none;
-  }
+main .services .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 400px;
+          flex: 1 1 400px;
 }
 
 main .services .freighttitle {
   padding-bottom: 8px;
   text-transform: uppercase;
   font-size: 1.6em;
-  border-bottom: 2px solid lightgrey;
+  color: #1b334e;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -180,13 +190,23 @@ main .services .list {
 
 main .services .list .items {
   margin: 10px 0px;
-  font-size: 1.1em;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #1b334e;
+  border-top: 1px solid #1b334e;
+  padding: 12px;
+  position: relative;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
   main .services .list .items {
-    font-size: 1em;
+    font-size: 1rem;
   }
+}
+
+main .services .list .items .fas {
+  position: absolute;
+  left: -20px;
+  color: #1b334e;
 }
 
 main .contact {
@@ -203,14 +223,16 @@ main .contact {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: rgba(201, 202, 206, 0.2);
+  background: #1b334e;
   height: 30vh;
 }
 
 main .contact .contactinfo {
   text-align: center;
   padding: 15px;
-  font-size: 1.4em;
+  font-size: 1.5rem;
+  color: white;
+  text-transform: uppercase;
 }
 
 main .contact .btn {
@@ -221,13 +243,12 @@ main .contact .btn {
   border-radius: 4px;
   -webkit-box-shadow: 1px 1px 1px black;
           box-shadow: 1px 1px 1px black;
-  color: whitesmoke;
-  background: #1b334e;
+  background: white;
 }
 
 main .contact .btn a {
   text-decoration: none;
-  color: whitesmoke;
+  color: #1b334e;
 }
 
 main .contact .btn:hover {
