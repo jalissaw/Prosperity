@@ -6,6 +6,7 @@ main {
     .heroabout {
         display: flex;
         justify-content: center;
+        flex-direction: column;
         align-items: center;
         position: relative;
         height: 50vh;
@@ -13,10 +14,42 @@ main {
         color: $darkblue;
 
         .abouttitle {
-            font-size: 2.3rem;
+            font-size: 3rem;
             text-transform: uppercase;
             text-align: center;
             z-index: 1;
+
+            @media #{$navgone} {
+                padding-top: 100px;
+            }
+
+            @media #{$allphones} {
+                font-size: 2.5rem;
+            }
+        }
+
+        .quote {
+            font-size: 1.2rem;
+            background: $darkblue;
+            color: white;
+            width: 80%;
+            padding: 12px;
+            font-weight: 10;
+            text-align: center;
+
+            @media #{$lowerFont} {
+                font-size: 0.95rem;
+            }
+
+            @media #{$allphones} {
+                font-size: 0.85rem;
+            }
+        }
+
+        .quote-name {
+            width: 80%;
+            text-align: right;
+            padding-top: 5px;
         }
 
         .freight {
@@ -28,6 +61,31 @@ main {
         }
     }
 
+    
+    .heading-container {
+        width: 80%;
+        padding: 20px;
+        text-align: right;
+        
+        .subheading {
+            background: $darkblue;
+            color: white;
+            padding: 20px;
+            font-style: oblique;
+            font-weight: 100;
+            font-size: 3rem;
+            text-transform: uppercase;
+
+            @media #{$lowerFont} {
+                font-size: 2rem;
+            }
+            @media #{$allphones} {
+                font-size: 1.35rem;
+            }
+        }
+        
+    }
+
 
     .aboutinfo {
         display: flex;
@@ -35,31 +93,38 @@ main {
         align-items: center;
         width: 100%;
         flex-wrap: wrap;
-        margin-top: 35px;
         line-height: 25px;
-        padding: 30px 0px;
+        padding-bottom: 50px;
 
         .information {
 
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
-            flex: 1 1 500px;
-            margin-top: 50px;
-
+            width: 80%;
+            flex-wrap: wrap;
 
             .infotitle {
-                padding-bottom: 8px;
-                border-bottom: 1.5px solid $lightblue;
+                padding-bottom: 12px;
+                font-size: 2rem;
+                color: $darkblue;
                 position: relative;
 
             }
 
             .info {
                 font-size: 1.02em;
-                width: 75%;
                 padding: 20px;
+                flex: 1 1 400px;
+                
+
+                .para {
+                    font-size: 1rem;
+
+                    @media #{$allphones} {
+                        font-size: 0.95rem;
+                    }
+                }
 
                 @media #{$allphones} {
                     width: 80%;
@@ -70,19 +135,24 @@ main {
 
         .image {
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-            flex: 1 1 300px;
-            padding-left: 20px;
+            flex-wrap: wrap;
+            width: 80%;
+            padding-top: 75px;
 
-            .name {
-                padding-top: 8px;
-            }
+            .photo{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                flex: 1 1 400px;
 
-            .subheading {
-                color: $darkblue;
-                font-style: oblique;
+                .name {
+                    padding-top: 8px;
+                    color: $darkblue;
+                    font-size: 1.5rem;
+                }
+
             }
 
             .headshot {
@@ -93,7 +163,35 @@ main {
                 }
 
                 @media #{$allphones} {
-                    width: 75%;
+                    width: 90%;
+                }
+            }
+
+            .about-ceo {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                flex: 1 1 350px;
+                padding-top: 50px;
+
+                .infotitle {
+                    padding-bottom: 12px;
+                    font-size: 2rem;
+                    color: $darkblue;
+                    position: relative;
+                    text-align: left;
+                    width: 100%;
+                }
+            }
+
+            .direct-contact-container {
+                width: 100%;
+
+                .direct-contact {
+                    padding: 10px;
+                    background: $darkblue;
+                    color: white;
+                    margin: 5px 0px;
                 }
             }
         }
