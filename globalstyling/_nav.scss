@@ -7,16 +7,24 @@
     align-items: center;
     height: 10vh;
     padding: 0px 50px;
-    color: white;
+    background: white;
+    
+    
     @media #{$navgone} {
         display: none;
     }
 
-    .logoimg {
+     .logoimg {
         height: 50px;
         width: 60px;
         margin-top: 20px;
 
+        @media #{$allphones} {
+            height: 80px;
+            width: 95px;
+            display: block;
+            margin: 0 auto;
+        }
     }
 
     .links {
@@ -26,6 +34,33 @@
         .link {
            margin: 0px 25px;
            padding: 10px;
+           position: relative;
+           z-index: 1;
+
+           &::before {
+                content: '';
+                position: absolute;
+                right: 0;
+                top: 0;
+                
+                height: 100%;
+                width: 0;
+                background: $darkblue;
+                transition: ease 0.4s;
+                transform: translate(0);
+                transform-origin: right;
+                z-index: -1;
+           }
+
+           
+           &:hover::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: $darkblue;
+       }
         }
 
         a {
@@ -36,9 +71,6 @@
             color: $darkblue;
 
             &:hover {
-                padding: 10px;
-                background: $darkblue;
-                letter-spacing: 2px;
                 color: white;
             }
         }
@@ -147,4 +179,5 @@
             background: white;
         }
     }
+
 }

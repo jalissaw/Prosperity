@@ -1,179 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond&family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10vh;
-  padding: 0px 50px;
-  color: white;
-}
-
-@media (max-width: 1000px) {
-  .nav {
-    display: none;
-  }
-}
-
-.nav .logoimg {
-  height: 50px;
-  width: 60px;
-  margin-top: 20px;
-}
-
-.nav .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-}
-
-.nav .links .link {
-  margin: 0px 25px;
-  padding: 10px;
-}
-
-.nav .links a {
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 10px;
-  -webkit-transition: ease-in 0.3s;
-  transition: ease-in 0.3s;
-  color: midnightblue;
-}
-
-.nav .links a:hover {
-  padding: 10px;
-  background: midnightblue;
-  letter-spacing: 2px;
-  color: white;
-}
-
-.showmenu {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  width: 0%;
-  z-index: 2;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-  background: midnightblue;
-  opacity: 0;
-}
-
-@media (min-width: 1000px) {
-  .showmenu {
-    display: none;
-  }
-}
-
-.showmenu.appear {
-  opacity: 1;
-  width: 100%;
-}
-
-.showmenu .links {
-  list-style-type: none;
-}
-
-.showmenu .showlink {
-  margin: 8px 0px;
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
-  padding: 10px;
-  opacity: 0;
-  -webkit-transition: ease-in-out 0.3s 0.2s;
-  transition: ease-in-out 0.3s 0.2s;
-}
-
-.showmenu .showlink.appear {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-.showmenu a {
-  text-decoration: none;
-  font-size: 1.3em;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  color: white;
-}
-
-.showmenu a:hover {
-  letter-spacing: 2px;
-}
-
-.menu {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 50px;
-  top: 25px;
-  right: 25px;
-  z-index: 3;
-}
-
-@media (min-width: 1000px) {
-  .menu {
-    display: none;
-  }
-}
-
-.menu .toggle {
-  position: relative;
-  height: 50px;
-  width: 50px;
-  opacity: 0;
-  z-index: 4;
-}
-
-.menu .toggle:hover {
-  cursor: pointer;
-}
-
-.menu span {
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background: midnightblue;
-}
-
-.menu span.color {
-  background: white;
-}
-
-.menu span:nth-child(2) {
-  position: absolute;
-  top: 15px;
-  background: midnightblue;
-  width: 32px;
-  height: 2px;
-}
-
-.menu span:nth-child(2).color {
-  background: white;
-}
-
 main {
   width: 100%;
 }
@@ -259,7 +85,7 @@ main .aboutinfo .information .info {
   padding: 20px;
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 540px) {
   main .aboutinfo .information .info {
     width: 80%;
     font-size: 0.95em;
@@ -306,40 +132,9 @@ main .aboutinfo .image .headshot {
   }
 }
 
-@media (min-width: 300px) and (max-width: 480px) {
+@media (min-width: 300px) and (max-width: 540px) {
   main .aboutinfo .image .headshot {
     width: 75%;
-  }
-}
-
-.homepagetransition {
-  -webkit-animation: homepg 0.75s;
-          animation: homepg 0.75s;
-}
-
-@-webkit-keyframes homepg {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
-  }
-}
-
-@keyframes homepg {
-  from {
-    opacity: 0;
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
-  }
-  to {
-    opacity: 1;
-    -webkit-transform: translateX(0px);
-            transform: translateX(0px);
   }
 }
 

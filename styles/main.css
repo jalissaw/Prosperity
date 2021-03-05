@@ -61,7 +61,7 @@ header .hero .intro .title {
   text-shadow: black 2px 2px 10px;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header .hero .intro .title {
     font-size: 1.7em;
     padding-right: 10px;
@@ -84,7 +84,7 @@ header .hero .intro .motto {
   opacity: 0.85;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header .hero .intro .motto {
     font-size: .9rem;
   }
@@ -102,7 +102,7 @@ header .hero .intro .btn {
   transition: ease-in 0.25s;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   header .hero .intro .btn {
     display: none;
   }
@@ -119,189 +119,6 @@ header .hero .intro .btn:hover {
   background: white;
   border: #1b334e 2px solid;
   color: #1b334e;
-}
-
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10vh;
-  padding: 0px 50px;
-  background: white;
-}
-
-@media (max-width: 1000px) {
-  .nav {
-    display: none;
-  }
-}
-
-.nav .logoimg {
-  height: 50px;
-  width: 60px;
-  margin-top: 20px;
-}
-
-@media (min-width: 0px) and (max-width: 540px) {
-  .nav .logoimg {
-    height: 80px;
-    width: 95px;
-    display: block;
-    margin: 0 auto;
-  }
-}
-
-.nav .links {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  list-style-type: none;
-}
-
-.nav .links .link {
-  margin: 0px 25px;
-  padding: 10px;
-}
-
-.nav .links a {
-  text-decoration: none;
-  font-size: 1.2em;
-  padding: 10px;
-  -webkit-transition: ease-in 0.3s;
-  transition: ease-in 0.3s;
-  color: #1b334e;
-}
-
-.nav .links a:hover {
-  padding: 10px;
-  background: #1b334e;
-  letter-spacing: 2px;
-  color: white;
-}
-
-.showmenu {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 100vh;
-  width: 0%;
-  z-index: 2;
-  -webkit-transition: ease-in-out 0.3s;
-  transition: ease-in-out 0.3s;
-  background: #1b334e;
-  opacity: 0;
-}
-
-@media (min-width: 1000px) {
-  .showmenu {
-    display: none;
-  }
-}
-
-.showmenu.appear {
-  opacity: 1;
-  width: 100%;
-}
-
-.showmenu .links {
-  list-style-type: none;
-}
-
-.showmenu .showlink {
-  margin: 8px 0px;
-  -webkit-transform: translateX(-20px);
-          transform: translateX(-20px);
-  padding: 10px;
-  opacity: 0;
-  -webkit-transition: ease-in-out 0.3s 0.2s;
-  transition: ease-in-out 0.3s 0.2s;
-}
-
-.showmenu .showlink.appear {
-  opacity: 1;
-  -webkit-transform: translateX(0px);
-          transform: translateX(0px);
-}
-
-.showmenu a {
-  text-decoration: none;
-  font-size: 1.3em;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  color: white;
-}
-
-.showmenu a:hover {
-  letter-spacing: 2px;
-}
-
-.menu {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 50px;
-  height: 50px;
-  top: 25px;
-  right: 25px;
-  z-index: 3;
-}
-
-@media (min-width: 1000px) {
-  .menu {
-    display: none;
-  }
-}
-
-.menu .toggle {
-  position: relative;
-  height: 50px;
-  width: 50px;
-  opacity: 0;
-  z-index: 4;
-}
-
-.menu .toggle:hover {
-  cursor: pointer;
-}
-
-.menu span {
-  position: absolute;
-  width: 24px;
-  height: 2px;
-  background: #1b334e;
-}
-
-.menu span.color {
-  background: white;
-}
-
-.menu span:nth-child(2) {
-  position: absolute;
-  top: 15px;
-  background: #1b334e;
-  width: 32px;
-  height: 2px;
-}
-
-.menu span:nth-child(2).color {
-  background: white;
 }
 
 .about {
@@ -335,7 +152,7 @@ header .hero .intro .btn:hover {
   padding: 125px 0px;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .about .description {
     padding: 0px;
     padding-top: 50px;
@@ -394,7 +211,7 @@ header .hero .intro .btn:hover {
   padding-left: 50px;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .about .description .info-img {
     padding-left: 0px;
   }
@@ -407,7 +224,7 @@ header .hero .intro .btn:hover {
           box-shadow: 1px 1px 3.5px #1b334e;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .about .description .info-img .road-img {
     width: 100%;
   }
@@ -432,7 +249,7 @@ header .hero .intro .btn:hover {
   padding: 100px 25px;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .about .containservices {
     padding: 100px 0px;
   }
@@ -445,7 +262,7 @@ header .hero .intro .btn:hover {
   color: white;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .about .containservices .title-service {
     padding: 25px;
   }
@@ -490,6 +307,13 @@ header .hero .intro .btn:hover {
           box-shadow: 1px 1px 1px #1b334e;
   margin: 20px;
   background: white;
+}
+
+@media (max-width: 320px) {
+  .about .containservices .services .service {
+    width: 250px;
+    height: 300px;
+  }
 }
 
 .about .containservices .services .service .fas {
@@ -555,8 +379,13 @@ header .hero .intro .btn:hover {
 
 .promo .help .jointitle {
   font-style: oblique;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 10px;
+  padding: 10px;
+  background: #1b334e;
+  color: white;
+  text-align: center;
+  font-weight: 100;
 }
 
 .promo .contactinfo {
@@ -578,7 +407,7 @@ header .hero .intro .btn:hover {
   padding: 15px;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .promo .contactinfo {
     padding: 40px 25px;
   }
@@ -596,7 +425,7 @@ header .hero .intro .btn:hover {
   }
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .promo .contactinfo .contacttitle {
     font-size: 1.4em;
   }
@@ -637,7 +466,7 @@ header .hero .intro .btn:hover {
   color: #1b334e;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   .promo .contactinfo .required {
     font-size: 1em;
   }
@@ -652,7 +481,7 @@ footer {
   padding: 30px 0px;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -688,7 +517,7 @@ footer {
   }
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer .footerlogo {
     font-size: 1.1em;
     width: 80%;
@@ -718,7 +547,7 @@ footer .form {
   width: 35%;
 }
 
-@media (min-width: 0px) and (max-width: 540px) {
+@media (min-width: 0px) and (max-width: 480px) {
   footer .form {
     margin-top: 30px;
     width: 80%;
