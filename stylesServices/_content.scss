@@ -9,14 +9,16 @@ main {
         justify-content: center;
         align-items: center;
         position: relative;
-        height: 50vh;
+        padding: 100px 0px;
         width: 100%;
         color: $darkblue;
+
 
         .servicetitle {
             font-size: 3rem;
             text-transform: uppercase;
             text-align: center;
+
             z-index: 1;
         }
 
@@ -44,6 +46,7 @@ main {
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-bottom: 50px;
 
         .introtitle {
             font-size: 2em;
@@ -62,6 +65,7 @@ main {
             @media #{$allphones} {
                 font-size: 0.9em;
                 line-height: 20px;
+                width: 80%;
             }
         }
     }

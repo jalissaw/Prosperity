@@ -19,7 +19,7 @@ main .heroservices {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 50vh;
+  padding: 100px 0px;
   width: 100%;
   color: #1b334e;
 }
@@ -63,6 +63,7 @@ main .intro {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  margin-bottom: 50px;
 }
 
 main .intro .introtitle {
@@ -84,6 +85,7 @@ main .intro .introsaying {
   main .intro .introsaying {
     font-size: 0.9em;
     line-height: 20px;
+    width: 80%;
   }
 }
 
