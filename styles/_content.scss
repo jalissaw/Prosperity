@@ -21,6 +21,11 @@
             padding-top: 50px;
         }
 
+        @media #{$removePad} {
+            padding: 0px;
+            padding-top: 50px;
+        }
+
         .info-about {
 
             display: flex;
@@ -64,6 +69,10 @@
                 padding-left: 0px;
             }
 
+            @media #{$removePad} {
+                padding-left: 0px;
+            }
+
             .road-img {
                 width: 450px;
                 height: 350px;
@@ -71,6 +80,12 @@
 
                 @media #{$allphones} {
                     width: 100%;
+                    object-fit: cover;
+                }
+
+                @media #{$spreadPic} {
+                    width: 100%;
+                    object-fit: cover;
                 }
             }
 

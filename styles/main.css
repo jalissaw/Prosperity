@@ -159,6 +159,13 @@ header .hero .intro .btn:hover {
   }
 }
 
+@media (max-width: 766px) {
+  .about .description {
+    padding: 0px;
+    padding-top: 50px;
+  }
+}
+
 .about .description .info-about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -217,6 +224,12 @@ header .hero .intro .btn:hover {
   }
 }
 
+@media (max-width: 766px) {
+  .about .description .info-img {
+    padding-left: 0px;
+  }
+}
+
 .about .description .info-img .road-img {
   width: 450px;
   height: 350px;
@@ -227,6 +240,16 @@ header .hero .intro .btn:hover {
 @media (min-width: 0px) and (max-width: 480px) {
   .about .description .info-img .road-img {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+
+@media (max-width: 916px) {
+  .about .description .info-img .road-img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
