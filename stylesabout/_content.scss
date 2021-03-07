@@ -151,9 +151,6 @@ main {
                         font-size: 0.95rem;
                     }
 
-                    @media #{$wideScreens} {
-                        font-size: 1.1rem;
-                    }
                     @media #{$widerScreens1700} {
                         font-size: 1.3rem;
                         line-height: 30px;
@@ -220,9 +217,6 @@ main {
                 padding-right: 20px;
 
                 .para-ceo {
-                    @media #{$wideScreens} {
-                        font-size: 1.1rem;
-                    }
 
                     @media #{$widerScreens1700} {
                         font-size: 1.3rem;
