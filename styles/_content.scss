@@ -32,6 +32,7 @@
             flex-direction: column;
             flex: 1 1 450px;
             padding: 50px;
+            min-height: 50vh;
 
             
             .introtitle{
@@ -40,12 +41,21 @@
                 font-size: 2rem;
                 padding: 5px 10px 10px 5px;
                 position: relative;
+
+                @media #{$allphones} {
+                    font-size: 1.85rem;
+                }
             }
     
             .introscript{
                 line-height: 25px;
                 padding: 20px 0px;
                 width: 85%;
+
+                @media #{$allphones} {
+                    width: auto;
+                    font-size: 0.95rem;
+                }
             }
 
             .info-button {
@@ -111,8 +121,8 @@
             color: white;
 
             @media #{$allphones} {
-                padding: 25px;
-               
+                padding: 50px;
+               font-size: 1.85rem;
             }
         }
 
@@ -206,6 +216,12 @@
                 color: white;
                 text-align: center;
                 font-weight: 100;
+                width: 80%;
+
+                @media #{$allphones} {
+                    width: 100%;
+                    
+                }
             }
         }
         
@@ -258,6 +274,10 @@
                 border-top: 1px solid $darkblue;
                 position: relative;
                 width: 80%;
+
+                @media #{$allphones} {
+                    width: 100%;
+                }
 
                 .fas {
                     position: absolute;

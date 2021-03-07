@@ -179,6 +179,7 @@ header .hero .intro .btn:hover {
       -ms-flex: 1 1 450px;
           flex: 1 1 450px;
   padding: 50px;
+  min-height: 50vh;
 }
 
 .about .description .info-about .introtitle {
@@ -189,10 +190,23 @@ header .hero .intro .btn:hover {
   position: relative;
 }
 
+@media (min-width: 0px) and (max-width: 480px) {
+  .about .description .info-about .introtitle {
+    font-size: 1.85rem;
+  }
+}
+
 .about .description .info-about .introscript {
   line-height: 25px;
   padding: 20px 0px;
   width: 85%;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .about .description .info-about .introscript {
+    width: auto;
+    font-size: 0.95rem;
+  }
 }
 
 .about .description .info-about .info-button {
@@ -284,7 +298,8 @@ header .hero .intro .btn:hover {
 
 @media (min-width: 0px) and (max-width: 480px) {
   .about .containservices .title-service {
-    padding: 25px;
+    padding: 50px;
+    font-size: 1.85rem;
   }
 }
 
@@ -406,6 +421,13 @@ header .hero .intro .btn:hover {
   color: white;
   text-align: center;
   font-weight: 100;
+  width: 80%;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promo .help .jointitle {
+    width: 100%;
+  }
 }
 
 .promo .contactinfo {
@@ -477,6 +499,12 @@ header .hero .intro .btn:hover {
   border-top: 1px solid #1b334e;
   position: relative;
   width: 80%;
+}
+
+@media (min-width: 0px) and (max-width: 480px) {
+  .promo .contactinfo .required {
+    width: 100%;
+  }
 }
 
 .promo .contactinfo .required .fas {
