@@ -9,7 +9,7 @@ main {
         flex-direction: column;
         align-items: center;
         position: relative;
-        height: 50vh;
+        padding: 75px 0px;
         width: 100%;
         color: $darkblue;
 
@@ -17,6 +17,7 @@ main {
             font-size: 3rem;
             text-transform: uppercase;
             text-align: center;
+            padding: 20px;
             z-index: 1;
 
             @media #{$navgone} {
@@ -25,6 +26,13 @@ main {
 
             @media #{$allphones} {
                 font-size: 2.5rem;
+            }
+
+            @media #{$wideScreens} {
+                font-size: 3.5rem;
+            }
+            @media #{$widerScreens1700} {
+                font-size: 4rem;
             }
         }
 
@@ -44,12 +52,25 @@ main {
             @media #{$allphones} {
                 font-size: 0.85rem;
             }
+
+            @media #{$wideScreens} {
+                font-size: 1.4rem;
+            }
+
+            @media #{$widerScreens1700} {
+                font-size: 1.6rem;
+            }
+
         }
 
         .quote-name {
             width: 80%;
             text-align: right;
             padding-top: 5px;
+
+            @media #{$widerScreens1700} {
+                font-size: 2rem;
+            }
         }
 
         .freight {
@@ -103,18 +124,25 @@ main {
             flex-wrap: wrap;
 
             .infotitle {
-                padding-bottom: 12px;
+                padding-bottom: 15px;
                 font-size: 2rem;
                 color: $darkblue;
                 position: relative;
 
+               
+                @media #{$widerScreens1700} {
+                    font-size: 2.5rem;
+                }
+
+                @media #{$wideScreens} {
+                    font-size: 2.3rem;
+                }
             }
 
             .info {
-                font-size: 1.02em;
-                padding: 20px;
+                font-size: 1.02rem;
                 flex: 1 1 400px;
-                
+                padding: 20px;
 
                 .para {
                     font-size: 1rem;
@@ -122,6 +150,17 @@ main {
                     @media #{$allphones} {
                         font-size: 0.95rem;
                     }
+
+                    @media #{$wideScreens} {
+                        font-size: 1.3rem;
+                    }
+                    @media #{$widerScreens1700} {
+                        font-size: 1.5rem;
+                        line-height: 30px;
+                    }
+
+
+                    
                 }
 
                 @media #{$allphones} {
@@ -163,6 +202,13 @@ main {
                 @media #{$allphones} {
                     width: 90%;
                 }
+                @media #{$wideScreens} {
+                    width: 65%;
+                }
+
+                @media #{$widerScreens1700} {
+                    width: 60%;
+                }
             }
 
             .about-ceo {
@@ -171,18 +217,39 @@ main {
                 align-items: center;
                 flex: 1 1 350px;
                 padding-top: 50px;
+                padding-right: 20px;
+
+                .para-ceo {
+                    @media #{$wideScreens} {
+                        font-size: 1.3rem;
+                    }
+
+                    @media #{$widerScreens1700} {
+                        font-size: 1.5rem;
+                        line-height: 30px;
+                    }
+
+                }
 
                 .seperate-para {
                     margin: 20px 0px;
                 }
 
                 .infotitle {
-                    padding-bottom: 12px;
+                    padding-bottom: 15px;
                     font-size: 2rem;
                     color: $darkblue;
                     position: relative;
                     text-align: left;
                     width: 100%;
+
+                    @media #{$widerScreens1700} {
+                        font-size: 2.5rem;
+                    }
+
+                    @media #{$wideScreens} {
+                        font-size: 2.3rem;
+                    }
                 }
             }
 
@@ -194,6 +261,17 @@ main {
                     background: $darkblue;
                     color: white;
                     margin: 5px 0px;
+
+                    @media #{$wideScreens} {
+                        font-size: 1.2rem;
+                        padding: 12px;
+                    }
+
+                    @media #{$widerScreens1700} {
+                        font-size: 1.35rem;
+                        padding: 15px;
+                    }
+                    
                 }
             }
         }

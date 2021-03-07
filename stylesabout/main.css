@@ -19,7 +19,7 @@ main .heroabout {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 50vh;
+  padding: 75px 0px;
   width: 100%;
   color: #1b334e;
 }
@@ -28,6 +28,7 @@ main .heroabout .abouttitle {
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
+  padding: 20px;
   z-index: 1;
 }
 
@@ -40,6 +41,18 @@ main .heroabout .abouttitle {
 @media (min-width: 0px) and (max-width: 540px) {
   main .heroabout .abouttitle {
     font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1699px) {
+  main .heroabout .abouttitle {
+    font-size: 3.5rem;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .heroabout .abouttitle {
+    font-size: 4rem;
   }
 }
 
@@ -65,10 +78,28 @@ main .heroabout .quote {
   }
 }
 
+@media (min-width: 1400px) and (max-width: 1699px) {
+  main .heroabout .quote {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .heroabout .quote {
+    font-size: 1.6rem;
+  }
+}
+
 main .heroabout .quote-name {
   width: 80%;
   text-align: right;
   padding-top: 5px;
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .heroabout .quote-name {
+    font-size: 2rem;
+  }
 }
 
 main .heroabout .freight {
@@ -138,18 +169,30 @@ main .aboutinfo .information {
 }
 
 main .aboutinfo .information .infotitle {
-  padding-bottom: 12px;
+  padding-bottom: 15px;
   font-size: 2rem;
   color: #1b334e;
   position: relative;
 }
 
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .aboutinfo .information .infotitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1699px) {
+  main .aboutinfo .information .infotitle {
+    font-size: 2.3rem;
+  }
+}
+
 main .aboutinfo .information .info {
-  font-size: 1.02em;
-  padding: 20px;
+  font-size: 1.02rem;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 400px;
           flex: 1 1 400px;
+  padding: 20px;
 }
 
 main .aboutinfo .information .info .para {
@@ -159,6 +202,19 @@ main .aboutinfo .information .info .para {
 @media (min-width: 0px) and (max-width: 540px) {
   main .aboutinfo .information .info .para {
     font-size: 0.95rem;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1699px) {
+  main .aboutinfo .information .info .para {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .aboutinfo .information .info .para {
+    font-size: 1.5rem;
+    line-height: 30px;
   }
 }
 
@@ -224,6 +280,18 @@ main .aboutinfo .image .headshot {
   }
 }
 
+@media (min-width: 1400px) and (max-width: 1699px) {
+  main .aboutinfo .image .headshot {
+    width: 65%;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .aboutinfo .image .headshot {
+    width: 60%;
+  }
+}
+
 main .aboutinfo .image .about-ceo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -239,6 +307,20 @@ main .aboutinfo .image .about-ceo {
       -ms-flex: 1 1 350px;
           flex: 1 1 350px;
   padding-top: 50px;
+  padding-right: 20px;
+}
+
+@media (min-width: 1400px) and (max-width: 1699px) {
+  main .aboutinfo .image .about-ceo .para-ceo {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .aboutinfo .image .about-ceo .para-ceo {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
 }
 
 main .aboutinfo .image .about-ceo .seperate-para {
@@ -246,12 +328,24 @@ main .aboutinfo .image .about-ceo .seperate-para {
 }
 
 main .aboutinfo .image .about-ceo .infotitle {
-  padding-bottom: 12px;
+  padding-bottom: 15px;
   font-size: 2rem;
   color: #1b334e;
   position: relative;
   text-align: left;
   width: 100%;
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .aboutinfo .image .about-ceo .infotitle {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1699px) {
+  main .aboutinfo .image .about-ceo .infotitle {
+    font-size: 2.3rem;
+  }
 }
 
 main .aboutinfo .image .direct-contact-container {
@@ -263,6 +357,20 @@ main .aboutinfo .image .direct-contact-container .direct-contact {
   background: #1b334e;
   color: white;
   margin: 5px 0px;
+}
+
+@media (min-width: 1400px) and (max-width: 1699px) {
+  main .aboutinfo .image .direct-contact-container .direct-contact {
+    font-size: 1.2rem;
+    padding: 12px;
+  }
+}
+
+@media (min-width: 1700px) and (max-width: 2000px) {
+  main .aboutinfo .image .direct-contact-container .direct-contact {
+    font-size: 1.35rem;
+    padding: 15px;
+  }
 }
 
 * {
