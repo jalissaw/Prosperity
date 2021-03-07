@@ -207,13 +207,13 @@ main .aboutinfo .information .info .para {
 
 @media (min-width: 1400px) and (max-width: 1699px) {
   main .aboutinfo .information .info .para {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 1700px) and (max-width: 2000px) {
   main .aboutinfo .information .info .para {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 30px;
   }
 }
@@ -312,13 +312,13 @@ main .aboutinfo .image .about-ceo {
 
 @media (min-width: 1400px) and (max-width: 1699px) {
   main .aboutinfo .image .about-ceo .para-ceo {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 }
 
 @media (min-width: 1700px) and (max-width: 2000px) {
   main .aboutinfo .image .about-ceo .para-ceo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 30px;
   }
 }
