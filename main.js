@@ -10,7 +10,6 @@ const hamburgerSlashTwo = document.querySelector('.bottom');
 
 // toggle function on click of menu
 
-
 toggler.addEventListener('click', () => {
     for (let i = 0; i < links.length; i++) {
         setTimeout(function () {
