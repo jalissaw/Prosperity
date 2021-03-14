@@ -12,14 +12,19 @@ const hamburgerSlashTwo = document.querySelector('.bottom');
 
 toggler.addEventListener('click', () => {
     for (let i = 0; i < links.length; i++) {
-        setTimeout(function () {
+        setTimeout(() => {
             links[i].classList.add("appear");
         }, 150 * i);
     }
+
     showMenu.classList.toggle("appear")
     hamburgerSlashOne.classList.toggle("color")
     hamburgerSlashTwo.classList.toggle("color")
 })
+
+
+
+
 
 
 //remove links and menu when link is clicked
