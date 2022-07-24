@@ -79,8 +79,8 @@
             }
 
             .road-img {
-                min-width: 400px;
-                height: 350px;
+                min-width: 480px;
+                height: 400px;
                 box-shadow: 1px 1px 3.5px $darkblue;
                 object-fit: cover;
 
@@ -94,6 +94,10 @@
                     min-width: 100%;
                     object-fit: cover;
                 }
+                @media #{$stablets} {
+                    margin: 0 20px 30px 0;
+                }
+
             }
 
         }
